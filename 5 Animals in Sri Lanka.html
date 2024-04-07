@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals_in_srilanka</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/animals_in_srilanka.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- to display icons on footer -->
+    <!-- alpine.js  -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <main>
+        <header>
+
+            <input type="checkbox" id="bars">
+            <nav class="nav-bar" id="navbar">
+                <div class="content">
+                    <div class="site-logo">
+                        <a href="#" class="logo-link">Wildlife-Haven.LK</a>
+                    </div>
+
+                    <ul class="navigation">
+                        <li class="link"><a href="./index.html">home</a></li>
+
+                        <li class="link"><a href="./2 Introduction_page.html">Introduction</a></li>
+
+
+                        <li class="link"><a href="#next">National Parks<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-nav">
+                                <li class="link"><a href="./6 Yala National Park.html ">Yala Park</a></li>
+                                <li class="link"><a href="./7 Wilpattu National Park.html ">Wilpattu Park</a></li>
+                            </ul>
+                        </li>
+                        <li class="link"><a href="">Animals In Srilanka<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-nav">
+                                <li class="link"><a href="./Srilankan leopard.html ">Leopard</a></li>
+                                <li class="link"><a href="./5 Animals in Sri Lanka.html">Endemic-Animals</a></li>
+                            </ul>
+                        </li>
+                        <li class="link"><a href="./3 Department of Wildlife Conservation.html">Conservation</a></li>
+
+
+                        <li class="link"><a href="./newlogin2.html">Login</a></li>
+
+
+                    </ul>
+
+                    <label for='bars' class="icon-bars"><i class="ri-menu-line"></i></label>
+                </div>
+            </nav>
+            </section>
+
+        </header>
+
+        <!-- end of the nav bar -->
+        </section>
+        <section class="top page">
+            <section class="row">
+                <section class="col">
+                    <h1>Animals <br>In Srilanka.</h1>
+                    <p>Sri Lanka is home to roughly 123 species of mammals, 41 of which are threatened (9 critically).
+
+                        <br>contains 185 species of reptiles, of which 60 are threatened and 115 are endemic.
+                        <br>
+
+                    </p>
+
+                    <button type="button"
+                        onclick="window.location.href='https://en.wikipedia.org/wiki/Wildlife_of_Sri_Lanka#:~:text=Sri%20Lanka%20is%20home%20to,Lankan%20elephant%20and%20the%20sambar.'"
+                        class="read-more">Learn More</button>
+
+                </section>
+                <section class="col5">
+
+                    <section class="card card1">
+                        <a href="6 Yala National Park.html">
+                            <h5>Yala National park</h5>
+                        </a>
+                    </section>
+
+                    <section class="card card2">
+                        <a href="7 Wilpattu National Park.html">
+                            <h5>Wilpattu National Park</h5>
+                        </a>
+                    </section>
+
+                </section>
+            </section>
+    </main>
+
+    <section x-data="animalData">
+        <section class="Mammals">
+            <!-- pop up dilog button -->
+
+            <button onclick="showLoginDialog()" style="display: none;" id="editButton">Edit-Content</button>
+            <section id="about1" class="heading1">
+                <h1 x-text="h1Mammals" id="mammalsH1"></h1>
+
+                <p x-text="descriptionMammals" id="descriptionMammels"></p>
+
+            </section>
+
+            <section class="row1">
+                <section class="col1">
+                    <section class="collage">
+                        <section class="vedio">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/LTJMbQ_Ojfk?si=LzVcVtxQj81RPth-"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </section>
+
+                        <a href="https://www.dilmahconservation.org/about-animals/mammals--f9925cffabdd604dfab150bbcb49f2a8"
+                            class="read-more">Main source
+                        </a>
+                        <img src="./Images/mamals.jpg">
+
+
+                    </section>
+
+                </section>
+                <section class="col1">
+
+
+                    <h2 x-text="h2Mammals" id="MammalH2"></h2>
+                    <h3 x-text="h3MammalsLeo" id="leoMammelH3"></h3>
+                    <p x-text="descriptionMammalsLeo" id="mammelDescriptionLeo"></p>
+                    <a href="https://www.dilmahconservation.org/about-animals/mammals--f9925cffabdd604dfab150bbcb49f2a8/srilankanleopard--d8dbbf72a303e551afe0fd6c44d31a6f.html"
+                        class="read-more">Main source
+                    </a>
+                    <p><img src="./Images/pard.png"></p>
+
+
+
+
+
+                    <h3 x-text="h3MammalsElephant" id="elepantH3"></h3>
+                    <p x-text="descriptionMammalsElephant" id="descriptonElephant"></p>
+                    <a href="https://www.dilmahconservation.org/about-animals/mammals--f9925cffabdd604dfab150bbcb49f2a8/asianelephant--52afe4d23aac7695b47d0f4c29c47683.html"
+                        class="read-more">Main source</a>
+
+                    <p><img src="./Images/elepant for p.png" alt="owl"></p>
+
+                </section>
+            </section>
+
+
+
+
+        </section>
+
+
+        <section class="birds">
+            <section id="about" class="heading1">
+                <h1 x-text="h1Birds" id="birdsH1"></h1>
+
+                <p x-text="descriptionBirds" id="birdsDescription"></p>
+
+            </section>
+            <section class="row2">
+                <section class="col2">
+                    <section class="collage1">
+                        <section class="vedio1">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/y2WsDeI0M8Y?si=Y6u_kNntQztDpiKC"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </section>
+
+                        <a href="https://www.natureodyssey.com/endemic-birds-of-sri-lanka.html" class="read-more">Main
+                            source
+                        </a>
+                        <img src="./Images/mammal collage.jpg">
+
+
+
+                    </section>
+
+                </section>
+                <section class="col2">
+                    <h2 x-text="h2Birds" id="birdsH2"></h2>
+                    <h3 x-text="h3BirdsCrimson" id="crimsonH3">
+                    </h3>
+                    <p x-text="descriptionBirdsCrimson" id="crimsonDescription"></p>
+
+
+                    <p><img src="./Images/Crimson-backed-Flameback-2.jpg" alt="kottoruwa"></p>
+
+
+                    <h3 x-text="h3BirdsOwl" id="owlH3"></h3>
+                    <p x-text="descriptionBirdsOwl" id="owlDescripton"></p>
+
+
+                    <p><img src="./Images/owl.jpg" alt="owl"></p>
+
+                    <h3 x-text="h3BirdsDrongo" id="drongoBirds"></h3>
+                    <p x-text="descriptionBirdsDrongo" id="drongoDiscription"></p>
+
+                    <a href="https://www.natureodyssey.com/endemic-birds-of-sri-lanka.html" class="read-more">Main
+                        source</a>
+
+                    <p><img src="./Images/drigo.jpg" alt="owl"></p>
+
+
+
+
+                </section>
+            </section>
+
+
+
+
+        </section>
+
+    </section>
+    <!-- x-data animal class  -->
+    </section>
+
+
+    <!-- footer part -->
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h1>"Wildlife-Haven.lk"</h1>
+                <p>
+                    Sri Lanka is a wildlife enthusiast's paradise and has plenty to offer visitors interested in animal
+                    and birdlife. This tropical island harbours an incredible selection of flora and fauna and is home
+                    to some of the finest national parks of the subcontinent. Home to a variety of species including the
+                    elusive leopard, regal elephant, blue whale, and a whole host of exotic birds, below is a list of
+                    the best places to see sectionerse and exciting wildlife on a tailor-made holiday to Sri Lanka.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4>Links :</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About WildLife-Haven</a></li>
+                    <li><a href="#">Locaton</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__col1">
+                <h4>Stay Updated with Our Newsletter!</h4>
+                <form onsubmit="storeNewsLetter(); return false;">
+                    <i class="ri-mail-line"></i>
+                    <input type="email" id="emailInput" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="ri-arrow-right-line"></i></button>
+                </form>
+                <div class="social-icons">
+                    <h4>Follow Us</h4>
+                    <i class="ri-facebook-circle-line"></i>
+                    <i class="ri-messenger-line"></i>
+                    <i class="ri-whatsapp-line"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-youtube-line"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            Copyright © WildLife-Haven.lk. All rights reserved.
+        </div>
+        <!-- sources  -->
+        <!-- https://www.pexels.com/search/forest/ -->
+        <!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css -->
+        <!-- https://en.wikipedia.org/wiki/Wildlife_of_Sri_Lanka#:~:text=Sri%20Lanka%20is%20home%20to,Lankan%20elephant%20and%20the%20sambar. -->
+        <!-- https://www.youtube.com/embed/LTJMbQ_Ojfk?si=LzVcVtxQj81RPth- -->
+        <!-- https://www.dilmahconservation.org/about-animals/mammals--f9925cffabdd604dfab150bbcb49f2a8 -->
+        <!-- https://www.dilmahconservation.org/about-animals/mammals--f9925cffabdd604dfab150bbcb49f2a8/srilankanleopard--d8dbbf72a303e551afe0fd6c44d31a6f.html -->
+        <!-- https://www.dilmahconservation.org/about-animals/mammals--f9925cffabdd604dfab150bbcb49f2a8/asianelephant--52afe4d23aac7695b47d0f4c29c47683.html -->
+        <!-- https://www.youtube.com/embed/y2WsDeI0M8Y?si=Y6u_kNntQztDpiKC -->
+        <!-- https://www.natureodyssey.com/endemic-birds-of-sri-lanka.html -->
+
+    </footer>
+    <!-- Pop up dialog -->
+
+    <div class="form-container">
+        <dialog id="login-dialog" style="max-height: 400px; overflow-y: auto;">
+            <h2>WildLife-Haven.LK</h2>
+            <p>you can edit the page content<br>********************************************</p>
+            <button type="button" class="close" id="btnClose"><i class="ri-close-fill"></i></button>
+            <h1 id="dialogTitle" contenteditable="true"></h1>
+            <p id="description1" contenteditable="true"></p>
+            <h2 id="dialogTitle2" contenteditable="true"></h2>
+            <h3 id="dialogTitle3" contenteditable="true"></h3>
+            <p id="description2" contenteditable="true"></p>
+            <h3 id="dialogTitle9" contenteditable="true"></h3>
+            <p id="description3" contenteditable="true"></p>
+            <h1 id="dialogTitle4" contenteditable="true"></h1>
+            <p id="description4" contenteditable="true"></p>
+            <h2 id="dialogTitle5" contenteditable="true"></h2>
+            <h3 id="dialogTitle6" contenteditable="true"></h3>
+            <p id="description5" contenteditable="true"></p>
+            <h3 id="dialogTitle7" contenteditable="true"></h3>
+            <p id="description6" contenteditable="true"></p>
+            <h3 id="dialogTitle8" contenteditable="true"></h3>
+            <p id="description7" contenteditable="true"></p>
+
+            <button type="button" id="btn">Submit</button>
+        </dialog>
+    </div>
+    <!-- End of pop up dialog -->
+    </section>
+
+    <script>
+        // Check if the value is set in localStorage
+        const changeStyle = localStorage.getItem('changeStyle');
+
+        if (changeStyle === 'true') {
+            // Change the style of the element
+            document.getElementById('editButton').style.display = 'block';
+
+            // Clear the value from localStorage so it doesn't trigger again
+            localStorage.removeItem('changeStyle');
+        }
+    </script>
+    <script src="./animal.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #082e3e;
+  --secondary-color: #e9c675;
+  --text-light: #cbd5e1;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Playfair Display", serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-image: url(./Images/bird-7914702_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* style for popup page  */
+.form-container{
+    width: 40%;
+    left: 80%;
+}
+#login-dialog {
+
+    margin-left: 50vh;
+    margin-top: 50vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 50%;
+  }
+  .dialog-content {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+  /* Style for buttons */
+  #login-dialog button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #676767; /* Button background color */
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 72%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Style for buttons on hover */
+  #login-dialog button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+
+  /* end style  */
+
+
+.Logo{
+    width: 200px;
+    cursor: pointer;
+    margin-left: 80px;
+    background-size: contain;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.navbar{
+    
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    /* background:linear-gradient(); */
+    padding: 20px 0px;
+    
+    
+}
+nav{
+    flex: 1;
+    text-align: center;
+}    
+
+
+
+nav ol li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 80px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+
+}
+
+
+nav ol li a{ 
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropbtn {
+    color: black;
+    background-color: var(--white);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.home{  
+    color: black;
+    background-color: var(--white);   
+    border: none;
+    cursor: pointer;
+}
+.home a{
+    color: black;
+    font-size: 23px;
+
+}
+.btnloging-popup {
+    background-color: var(--white);   
+    color: black;
+    font-size: 23px;
+
+}
+.dropdown-list {
+    display: none;
+    background-color: #333;
+    z-index: 1;
+    box-shadow: rgb(226, 222, 222);
+    position: absolute;
+}
+.dropdown-list a {
+    color: #fff;
+    display: block;
+    padding: 13px 17px;
+    text-decoration: none;
+
+}
+.dropdown:hover .dropdown-list {
+    display: block;
+}
+@media screen and (max-width: 778px){
+    .Logo{
+        width: 100px;
+        cursor: pointer;
+        margin-left: 30px;
+    }
+    .navbar{
+    
+        height: 110px;
+        background:transparent;
+
+    }
+
+    .checkbtn{
+        display: block;
+        position: fixed;  
+        margin-left: 60%;
+        font-size: 40px;
+        top: 20px;
+        color: #000;
+        z-index: 10;
+    }
+    nav ol{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        background:linear-gradient(to left, #3e3e3e,#b9b9b9);
+
+        text-align: center;
+        transition: all .5s;
+        z-index: 10;
+    }
+    nav ol li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ol li a{
+        font-size: 20px;
+
+    }
+    a:hover,a.active{
+        background: none;
+    }
+    #check:checked ~ ol{
+        left: 0;
+        
+    }
+
+
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 22px;
+    padding: 12px 0;
+    background: #ffffff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        height: 88%;
+        align-items: center;
+        margin-left: 5%;
+        margin-top: -10px;
+        margin-right: 20%;
+        
+        
+    }
+    
+    .col{  
+        width: 60%;     
+        background-color: white;
+        opacity: 0.9;
+        box-shadow: 0 0 20px rgb(2, 2, 2);
+        padding: 5px;
+        border-radius: 10px;
+        margin-right: 5%;
+    
+    }
+ 
+    .col h1 {
+        font-family: "Poppins", sans-serif;
+        color: #0a0a0a;
+        font-size: 50px;
+        font-weight: 500;
+        margin-left: 20%;
+        
+    }
+    .col h3,h4,h6 {
+        color: #0c0c0c;
+        font-size: 20px;
+        line-height: 25px;
+        margin-left: 7%;
+        margin-top: 3%;
+        
+        
+    }
+    @media screen and (max-width: 1008px) {
+        .row{
+            flex-direction: column;
+            margin-right: 10%;
+        }
+      
+    }
+
+main{
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.514), rgba(202, 202, 202, 0.16)), url(../Images/pexels-anikó-liptai-19478151.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    box-sizing: border-box;
+   
+}
+/* About animal section  */
+.item21 { grid-area: menu; }
+.item31 { grid-area: main; }
+.item41 { grid-area: right; }
+.item51 { grid-area: footer; }
+.item61 { grid-area: img; }
+
+
+.grid-container1 {
+  display: grid;
+  grid-template-areas:
+    'menu main main main right right'
+    'menu  img img img footer footer';
+}
+.about1 {
+    background-image: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0),
+      var(--primary-color) 8rem);
+    overflow: hidden;
+    margin-top: 5%;
+  }
+.grid-container1 img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.item31{
+  margin-left: 60%;
+  width: 32vh;
+  height: 40vh;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+  background-image: url(./Images/totoile.jpg);
+  object-fit: cover;
+  background-size: cover;
+}
+.item41{
+    margin-left: 15%;
+    background-image: url(./Images/animal-19621_640.jpg);
+    object-fit: cover;
+    background-size: cover;
+    width: 32vh;
+    height: 40vh;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+
+}
+.item61{
+    margin-top: 20px;
+    margin-left: 60%;
+    background-image: url(./Images/roe-deer-2634729_640.jpg);
+    object-fit: cover;
+    background-size: cover;
+    width: 32vh;
+    height: 40vh;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+
+}
+
+.item51{
+    margin-top: 20px;
+    margin-left: 15%;
+    background-image: url(./Images/butterfly-1391809_640.jpg);
+    object-fit: cover;
+    background-size: cover;
+    width: 32vh;
+    height: 40vh;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+
+}
+
+.grid-container1 > div {
+   
+  text-align: center;
+  /* padding: 20px 0; */
+  font-size: 15px;
+}
+.item21{
+    width: 50vh;
+    margin-left: 60%;
+}
+
+.item21 h1{
+    color: var(--white);
+    font-size: 50px;
+    font-family: var(--header-font);
+}
+.item21 p{
+    color: var(--text-light);
+}
+.item21 ul{
+    font-size: 20px;
+    display: block;
+    list-style-type: disc;
+    margin-block-end: 0em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    padding-inline-start: 40px;
+  }
+
+.item21 ul li{
+margin-top: 20px;
+text-align: left;
+}
+
+.list1 li:hover{
+box-shadow: 0 0 10px rgb(7, 7, 7);
+
+
+}
+.list1 a {
+text-decoration: none;
+color: var(--secondary-color);
+font-weight: bold;
+}
+@media screen and (max-width: 1067px) {
+    .grid-container1 {
+      grid-template-areas:
+        'menu menu menu menu menu menu'
+        'main main main main main main'
+        'right right right right right right'
+        'footer footer footer footer footer footer';
+    }
+    
+    .grid-container1{
+    margin-left: -45%;
+  }
+  .item31{
+    margin-left: 70%;
+  }
+  .item41,.item51{
+    margin-left: 70%;
+    margin-top: 10px;
+  }
+  .item61{
+    margin-left: -50%;
+    margin-top: 10px;
+  }
+
+  }
+  
+  
+  @media screen and (max-width: 479px) {
+    .grid-container1 {
+      grid-template-areas:
+        'menu menu menu menu menu menu'
+        'main main main main main main'
+        'right right right right right right'
+        'footer footer footer footer footer footer';
+      grid-template-columns: 1fr; /* Make it a single column layout */
+    }
+  }
+ /* end of the animal section  */

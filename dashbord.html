@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=//, initial-scale=1.0">
+    <title>profile</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="stylesheet" href="./dashbord.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+
+  <header>
+
+    <input type="checkbox" id="bars">
+<nav class="nav-bar" id="navbar">
+<div class="content">
+    <div class="site-logo">
+        <a href="#" class="logo-link">Wildlife-Haven.LK</a>
+    </div>
+
+    <ul class="navigation">
+        <li class="link"><a href="./index.html">home</a></li>
+
+        <li class="link"><a href="./2 Introduction_page.html">Introduction</a></li>
+
+
+        <li class="link"><a href="#next">National Parks<i class="fas fa-caret-down"></i></a>
+            <ul class="sub-nav">
+                <li class="link"><a href="./6 Yala National Park.html ">Yala Park</a></li>
+                <li class="link"><a href="./7 Wilpattu National Park.html ">Wilpattu Park</a></li>
+            </ul>
+        </li>
+        <li class="link"><a href="">Animals In Srilanka<i class="fas fa-caret-down"></i></a>
+            <ul class="sub-nav">
+                <li class="link"><a href="./Srilankan leopard.html ">Leopard</a></li>
+                <li class="link"><a href="./5 Animals in Sri Lanka.html">Endemic-Animals</a></li>
+            </ul>
+        </li>
+        <li class="link"><a href="./3 Department of Wildlife Conservation.html">Conservation</a></li>
+
+    <!-- logout button      -->
+    <button onclick="logOut()" class="logout" style="float: right;">Logout</button>
+
+    </ul>
+
+    <label for='bars' class="icon-bars"><i class="ri-menu-line"></i></label>
+</div>
+</nav>
+    </section>
+
+</header>
+
+    <!-- admin authorised part  -->
+    <div class="grid-container" id="admin-content" style="display: none;">
+        <div class="main-box">
+            <h1>Profile-Page</h1>
+            <h3>Welcome to WILDLIFE-HAVEN.LK</h3>
+            <h4>
+                Your Name:
+                <script>
+                    document.write(localStorage.getItem("name"));
+                </script>
+            </h4>
+            <h6>Your Email is:
+                <button onclick="logOut()" style="float: right;">Logout</button>
+
+                <script>
+                    document.write(localStorage.getItem("email"));
+                </script>
+            </h6>
+
+        </div>
+
+ 
+         <div class="side-box1" style="max-height: 400px; overflow-y: auto;">
+            <h2>Add Email to Newsletter</h2>
+            <input type="email" id="emailInput" placeholder="Enter email...">
+            <button onclick="addEmail()">Add Email</button>
+            <h2>Newsletter Emails</h2>
+            <ul id="emailList"></ul>
+            <script>
+            </script>
+        </div>
+    
+    
+        <div class="side-box2" style="max-height: 400px; overflow-y: auto;">
+            <h1>User-Profiles</h1>
+            <ul id="userList"></ul>
+            <script>
+            </script>
+    
+        </div>
+    </div>
+<!-- Systerm admin authorided part  -->
+   
+<!-- user part  -->
+<div class="container" id="user-content" style="display: none;">
+    <div class="grid-container1">
+  
+        <div class="main-box">
+            <h1>Profile-Page</h1>
+            <h3>Welcome to WILDLIFE-HAVEN.LK</h3>
+            <h4>
+                Your Name:
+                <script>
+                    document.write(localStorage.getItem("name"));
+                </script>
+            </h4>
+            <h6>Your Email is:
+                <script>
+                    document.write(localStorage.getItem("email"));
+                </script>
+
+            </h6>
+
+        </div>
+
+      <div class="grid-item">
+        <a href="index.html">
+          <img src="./Images/kingfisher-881594_640.jpg" alt="Data Analytics">
+          <h2>Home</h2>
+        </a>
+        <button onclick="changeStyleOnPageB1()">Edit Page</button>
+        <script>
+            function changeStyleOnPageB1() {
+            // Set a value in localStorage
+            localStorage.setItem('changeStyle', 'true');
+        
+            // Redirect to Page B
+            window.location.href = 'index.html';
+        }
+        </script> 
+      </div>
+  
+  
+      <div class="grid-item">
+        <a href="2 Introduction_page.html">
+          <img src="./Images/squirrel-4515962_640.jpg" alt="Notifications">
+          <h2>Introduction page</h2>
+        </a>
+        <button onclick="changeStyleOnPageB2()">Edit Page</button>
+        <script>
+            function changeStyleOnPageB2() {
+            // Set a value in localStorage
+            localStorage.setItem('changeStyle', 'true');
+        
+            // Redirect to Page B
+            window.location.href = '2 Introduction_page.html';
+        }
+        </script> 
+      </div>
+  
+      <div class="grid-item">
+        <a href="6 Yala National Park.html">
+          <img src="./Images/elephants-2131326_640.jpg" alt="Tasks">
+          <h2> Yala National parks</h2>
+        </a>
+        <button onclick="changeStyleOnPageB3()">Edit Page</button>
+
+
+        <script>
+            function changeStyleOnPageB3() {
+            // Set a value in localStorage
+            localStorage.setItem('changeStyle', 'true');
+        
+            // Redirect to Page B
+            window.location.href = '6 Yala National Park.html';
+        }
+        </script>
+
+      </div>
+  
+      <div class="grid-item">
+        <a href="7 Wilpattu National Park.html">
+          <img src="./Images/mineriya 1.jpg" alt="Calendar">
+          <h2>Wilpattu Park</h2>
+        </a>
+        <button onclick="changeStyleOnPageB4()">Edit Page</button>
+        <script>
+            function changeStyleOnPageB4() {
+            // Set a value in localStorage
+            localStorage.setItem('changeStyle', 'true');
+        
+            // Redirect to Page B
+            window.location.href = '7 Wilpattu National Park.html';
+        }
+        </script> 
+      </div>
+  
+      <div class="grid-item">
+        <a href="Srilankan leopard.html">
+          <img src="./Images/leopard-515509_640.jpg" alt="Settings">
+          <h2>Srilankan Leopard</h2>
+        </a>
+        <button onclick="changeStyleOnPageB5()">Edit Page</button>
+        <script>
+            function changeStyleOnPageB5() {
+            // Set a value in localStorage
+            localStorage.setItem('changeStyle', 'true');
+        
+            // Redirect to Page B
+            window.location.href = 'Srilankan leopard.html';
+        }
+        </script> 
+      </div>
+  
+      <div class="grid-item">
+        <a href="./3 Department of Wildlife Conservation.html">
+          <img src="./Images/boys-1807545_640 (1).jpg" alt="Data Analytics">
+          <h2>Conservation</h2>
+        </a>
+        <button onclick="changeStyleOnPageB6()">Edit Page</button>
+        <script>
+            function changeStyleOnPageB6() {
+            // Set a value in localStorage
+            localStorage.setItem('changeStyle', 'true');
+        
+            // Redirect to Page B
+            window.location.href = '3 Department of Wildlife Conservation.html';
+        }
+        </script> 
+      </div>
+      <div class="grid-item">
+        <a href="5 Animals in Sri Lanka.html">
+          <img src="./Images/bird-8130023_640.png" alt="Additional">
+          <h2>Animals</h2>
+        </a>
+        <button onclick="changeStyleOnPageB7()">Edit Page</button>
+        <script>
+            function changeStyleOnPageB7() {
+            // Set a value in localStorage
+            localStorage.setItem('changeStyle', 'true');
+        
+            // Redirect to Page B
+            window.location.href = '5 Animals in Sri Lanka.html';
+        }
+        </script> 
+      </div>
+    </div>
+  </div>      
+
+ <!-- footer part -->
+ <footer class="footer">
+  <div class="section__container footer__container">
+    <div class="footer__col">
+      <h1>"Wildlife-Haven.lk"</h1>
+      <p>
+          Sri Lanka is a wildlife enthusiast's paradise and has plenty to offer visitors interested in animal and birdlife. This tropical island harbours an incredible selection of flora and fauna and is home to some of the finest national parks of the subcontinent. Home to a variety of species including the elusive leopard, regal elephant, blue whale, and a whole host of exotic birds, below is a list of the best places to see sectionerse and exciting wildlife on a tailor-made holiday to Sri Lanka.
+      </p>
+    </div>
+    <div class="footer__col">
+      <h4>Links :</h4>
+      <ul class="footer__links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About WildLife-Haven</a></li>
+        <li><a href="#">Locaton</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer__col1">
+      <h4>Stay Updated with Our Newsletter!</h4>
+      <form>
+          <i class="ri-mail-line"></i>
+          <input type="email" placeholder="Enter your email id" required>
+          <button type="submit"><i class="ri-arrow-right-line"></i></button>
+      </form>
+      <div class="social-icons">
+          <h4>Follow Us</h4>
+          <i class="ri-facebook-circle-line"></i>
+          <i class="ri-messenger-line"></i>
+          <i class="ri-whatsapp-line"></i>
+          <i class="ri-instagram-line"></i>
+          <i class="ri-youtube-line"></i>
+      </div>
+    </div>
+  </div>
+  <div class="footerBottom">
+    Copyright © WildLife-Haven.lk. All rights reserved.
+  </div>
+</footer>
+  <script src="profile.js"></script>
+
+</body>
+</html>

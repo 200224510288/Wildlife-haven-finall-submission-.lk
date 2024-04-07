@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yala Park</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/yala.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+
+<body>
+    <main>
+        <header>
+
+            <input type="checkbox" id="bars">
+            <nav class="nav-bar" id="navbar">
+                <div class="content">
+                    <div class="site-logo">
+                        <a href="#" class="logo-link">Wildlife-Haven.LK</a>
+                    </div>
+
+                    <ul class="navigation">
+                        <li class="link"><a href="./index.html">home</a></li>
+
+                        <li class="link"><a href="./2 Introduction_page.html">Introduction</a></li>
+
+
+                        <li class="link"><a href="#next">National Parks<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-nav">
+                                <li class="link"><a href="./6 Yala National Park.html ">Yala Park</a></li>
+                                <li class="link"><a href="./7 Wilpattu National Park.html ">Wilpattu Park</a></li>
+                            </ul>
+                        </li>
+                        <li class="link"><a href="">Animals In Srilanka<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-nav">
+                                <li class="link"><a href="./Srilankan leopard.html ">Leopard</a></li>
+                                <li class="link"><a href="./5 Animals in Sri Lanka.html">Endemic-Animals</a></li>
+                            </ul>
+                        </li>
+                        <li class="link"><a href="./3 Department of Wildlife Conservation.html">Conservation</a></li>
+
+
+                        <li class="link"><a href="./newlogin2.html">Login</a></li>
+
+
+                    </ul>
+
+                    <label for='bars' class="icon-bars"><i class="ri-menu-line"></i></label>
+                </div>
+            </nav>
+            </section>
+
+        </header>
+
+
+        <section class="word">
+            <span>Y</span>
+            <span>A</span>
+            <span>L</span>
+            <span>A</span>
+
+        </section>
+
+        <section class="text-box1">
+
+
+            <h1>National Park</h1>
+            <p>Yala National Park contains five blocks, with the two south-eastern coastal blocks being the most
+                frequently visited by the public. The park is also connected to adjoining wildlife sanctuaries and
+                national parks, the largest of which is the Lunugamvehera National Park. Overall, Yala covers an area of
+                979 square kilometres that hosts a variety of different ecosystems, ranging from jungles to freshwater
+                wetlands, that makes it an ideal home for several species of wildlife.</p>
+            <a href="https://www.lovesrilanka.org/all-about-yala-national-park/" class="btn">Explore More</a>
+        </section>
+        </section>
+        </section>
+        </header>
+    </main>
+
+    <!-- About yala -->
+    <div id="editableContent">
+        <!-- main data section  -->
+        <section x-data="yala">
+            <section class="About-wilpattu">
+                <!-- contain-editable-button  -->
+                <button onclick="showLoginDialog()" style="display: none;" id="editButton">Edit-Content</button>
+
+                <section class="container1">
+                    <section class="column">
+                        <section class="heading">
+
+                            <h1 id="about1" x-text="h1AboutYala"></h1>
+                        </section>
+                        <section class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d212363.74689072726!2d81.4274855234242!3d6.402933617991485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae5d3a62ffb9359%3A0x3bb623d70b5a3314!2sYala%20National%20Park!5e0!3m2!1sen!2slk!4v1705230553065!5m2!1sen!2slk"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>">
+                        </section>
+                        <section class="slider1">
+
+
+                        </section>
+                    </section>
+                    <section class="column">
+                        <h2 x-text="h2AboutYala"></h2>
+                        <p x-text="descriptionAboutYala"></p>
+                        <a href="https://www.ugaescapes.com/destinations/yala.html" class="read-more">Main source</a>
+                        <h2 x-text="h2WildlifeYala"></h2>
+                        <p x-text="descriptionWildlifeYala"></p>
+                        <a href="https://www.ugaescapes.com/destinations/yala.html" class="read-more">Main source</a>
+
+
+                    </section>
+
+                </section>
+            </section>
+
+
+            <!-- end about yala  -->
+
+            <!-- about animals  -->
+
+
+            <section class="endemic">
+                <section class="container2">
+                    <section class="column1">
+                        <section class="heading">
+
+                            <h1 id="ende" x-text="h1OurEndemic"></h1>
+                        </section>
+                        <section class="list">
+                            <h2 x-text="h2OurEndemic"></h2>
+                            <ol>
+                                <template x-for="animal in animalList">
+                                    <li x-text="animal"></li>
+                                </template>
+                            </ol>
+
+                        </section>
+
+                    </section>
+                    <section class="column1">
+                        <h2 x-text="h2Birdlife"></h2>
+                        <p x-text="descriptionBirdlife"></p>
+                        <h2 x-text="h2Reptiles"></h2>
+                        <p x-text="descriptionReptiles"></p>
+                        <a href="https://exploreyala.com/birds_in_yala.php" class="read-more">Main source</a>
+
+                        <section class="vdeo">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/w2I3c1f-N0Q?si=56OQ6KkrpgTCXq4-"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </section>
+                    </section>
+
+                </section>
+            </section>
+
+            <!-- end of about animals  -->
+
+            <!-- about activites -->
+
+
+
+            <section class="Activities">
+
+                <section class="heading">
+
+                    <h1 id="act" x-text="h1Adventures"></h1>
+                </section>
+                <section class="card card1">
+                    <section class="face front">
+                        <img src="./Images/yala safari.jpg">
+                        <h3 x-text="h3JeepSafari"></h3>
+                    </section>
+                    <section class="face back">
+                        <h3 x-text="h3JeepSafari2"></h3>
+                        <p x-text="descriptionJeepSafari"></p>
+                        <section class="link">
+                            <a href="https://exploreyala.com/yala_safari_jeep_tours.php">Details</a>
+                        </section>
+                    </section>
+                </section>
+                <section class="card card2">
+                    <section class="face front">
+                        <img src="./Images/yalaacc.jpg">
+                        <h3 x-text="h3Accommodation"></h3>
+                    </section>
+                    <section class="face back">
+                        <h3 x-text="h3Accommodation2"></h3>
+                        <p x-text="descriptionAccommodation"></p>
+                        <section class="link">
+                            <a href="https://exploreyala.com/yala-safari-and-adventure-packages.php">Details</a>
+                        </section>
+                    </section>
+                </section>
+                <section class="card card3">
+                    <section class="face front">
+                        <img src="./Images/yala camping.jpg">
+
+                        <h3 x-text="h3Camping"></h3>
+                    </section>
+                    <section class="face back">
+                        <h3 x-text="h3Camping2"></h3>
+                        <p x-text="descriptionCamping">
+                        </p>
+                        <section class="link">
+                            <a href="https://srilankayalasafari.com/">Details</a>
+                        </section>
+                    </section>
+                </section>
+
+
+
+            </section>
+            <section class="polution">
+                <section class="heading">
+
+                    <h1 id="Request" x-text="h1OurRequest"></h1>
+                </section>
+                <section class="row">
+                    <img src="./Images/yala pol1.jpg">
+                    <img src="./Images/yala pol2.jpg">
+                    <img src="./Images/yala pol3.jpg">
+
+                </section>
+                <section class="row1">
+                    <section class="heading">
+
+                        <h1 id="about1" x-text="h1Remember"></h1>
+                    </section>
+                    <section class="list1">
+                        <ol>
+                            <template x-for="rule in rulesList">
+                                <li x-text="rule"></li>
+                            </template>
+                        </ol>
+                        <a href="https://www.ugaescapes.com/ulagalla/leisure/things-to-do/wilpattu-minneriya-national-parks.html"
+                            class="read-more">Main source</a>
+
+                    </section>
+
+
+
+                </section>
+            </section>
+            <!-- main section data  -->
+        </section>
+
+
+        <!-- footer part -->
+        <footer class="footer">
+            <div class="section__container footer__container">
+                <div class="footer__col">
+                    <h1>"Wildlife-Haven.lk"</h1>
+                    <p>
+                        Sri Lanka is a wildlife enthusiast's paradise and has plenty to offer visitors interested in
+                        animal and birdlife. This tropical island harbours an incredible selection of flora and fauna
+                        and is home to some of the finest national parks of the subcontinent. Home to a variety of
+                        species including the elusive leopard, regal elephant, blue whale, and a whole host of exotic
+                        birds, below is a list of the best places to see sectionerse and exciting wildlife on a
+                        tailor-made holiday to Sri Lanka.
+                    </p>
+                </div>
+                <div class="footer__col">
+                    <h4>Links :</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About WildLife-Haven</a></li>
+                        <li><a href="#">Locaton</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col1">
+                    <h4>Stay Updated with Our Newsletter!</h4>
+
+                    <form onsubmit="storeNewsLetter(); return false;">
+                        <i class="ri-mail-line"></i>
+                        <input type="email" id="emailInput" placeholder="Enter your email id" required>
+                        <button type="submit"><i class="ri-arrow-right-line"></i></button>
+                    </form>
+
+                    <div class="social-icons">
+                        <h4>Follow Us</h4>
+                        <i class="ri-facebook-circle-line"></i>
+                        <i class="ri-messenger-line"></i>
+                        <i class="ri-whatsapp-line"></i>
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-youtube-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                Copyright © WildLife-Haven.lk. All rights reserved.
+            </div>
+
+            <!-- souces -->
+            <!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css -->
+            <!-- https://www.lovesrilanka.org/all-about-yala-national-park/ -->
+            <!-- https://www.ugaescapes.com/destinations/yala.html -->
+            <!-- https://leopardtrails.com/sri-lankan-leopard/ -->
+            <!-- https://www.worldwildlife.org/species/sri-lankan-elephant -->
+            <!-- https://www.wildlifetourssrilanka.com/wildlife/wildlife-in-sri-lanka/the-sri-lankan-sloth-bear.html -->
+            <!-- https://www.jungledragon.com/specie/3454/sri_lankan_axis_deer.html -->
+            <!-- https://exploreyala.com/birds_in_yala.php -->
+            <!-- https://srilankayalasafari.com/ -->
+            <!-- https://www.ugaescapes.com/ulagalla/leisure/things-to-do/wilpattu-minneriya-national-parks.html -->
+
+
+        </footer>
+
+        <!-- Pop up dialog -->
+
+        <div class="form-container">
+            <dialog id="login-dialog" style="max-height: 400px; overflow-y: auto;">
+                <h2>WildLife-Haven.LK</h2>
+                <p>you can edit the page content<br>********************************************</p>
+                <button type="button" class="close" id="btnClose"><i class="ri-close-fill"></i></button>
+                <textarea id="editedContent" rows="4" cols="50"></textarea>
+                <button type="button" id="btnSave">Save Changes</button>
+            </dialog>
+        </div>
+
+        <script>
+            // Check if the value is set in localStorage
+            const changeStyle = localStorage.getItem('changeStyle');
+    
+            if (changeStyle === 'true') {
+                // Change the style of the element
+                document.getElementById('editButton').style.display = 'block';
+    
+                // Clear the value from localStorage so it doesn't trigger again
+                localStorage.removeItem('changeStyle');
+            }
+        </script>
+
+        <script src="./yala.js"></script>
+
+</body>
+
+</html>

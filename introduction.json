@@ -1,0 +1,39 @@
+{
+    "h1Intro": "Introduction of Sri Lankan wildlife",
+    "h2Intro": "Locations :",
+    "descriptionIntro": "There are 26 National Parks in Sri Lanka, making it one of the best places to see wildlife in Asia. Each park offers a fantastic opportunity to see the flora and fauna of Sri Lanka, but every location and wildlife experience is different. This makes it crucial to work out which type of encounter you’re after – do you prioritize big mammals, birds, comfort, or simplicity? The island has it all; you just need to know where to find it and what the best wildlife experiences in Sri Lanka are for you.",
+    "h1Wonder": "Wonder of Wildlife",
+    "descriptionWonder": "Sri Lanka is a wildlife enthusiast's paradise and has plenty to offer visitors interested in animal and birdlife. This tropical island harbours an incredible selection of flora and fauna and is home to some of the finest national parks of the subcontinent. Home to a variety of species including the elusive leopard, regal elephant, blue whale, and a whole host of exotic birds, below is a list of the best places to see sectionerse and exciting wildlife on a tailor-made holiday to Sri Lanka.",
+    "h1Sinharaja": "World Heritage Sinharaja Rain Forest",
+    
+    "h1Location": "About Location :",
+    "descriptionLocation": "Encompassing the last extensive patch of primary lowland rainforest in Sri Lanka, Sinharaja Forest Reserve is situated in the south-west lowland wet zone of Sri Lanka.  Covering an area of 8,864 ha and ranging from an altitude of 300 – 1,170 meters, it consists of 6,092 ha of Forest Reserve and 2,772 ha of Proposed Forest Reserve. This narrow strip of undulating terrain encompasses a series of ridges and valleys that are crisscrossed by an intricate network of streams. Draining to both the south and north, this detailed matrix of waterways flow into the Gin River on the southern boundary of the property and Kalu River via the Napola Dola, Koskulana Ganga and Kudawa Ganga on its northern boundary.",
+    "h1Integrity": "Integrity :",
+    "descriptionIntegrity": "Sinharaja Forest Reserve forms a sufficiently large conservation unit for the in-situ conservation of rare and endangered species while sustaining the on-going biological evolutionary processes for which it was inscribed. Surrounded by 13 other adjacent natural forest areas that provide an added layer of protection to the property the boundaries however, require further definition and demarcation.",
+    "h1Minneriya": "Minneriya National Park",
+    "h1MinneriyaLocation": "About Location :",
+
+    "descriptionMinneriyaLocation": "Minneriya National Park is located in Sri Lanka’s North Central Province, 182 kilometers from Colombo. The major cities closest to Minneriya National Park are Habarana and Polonnaruwa. The renovated, vast ancient Minneriya Rainwater Reservoir that irrigates a considerable area of the district of Polonnaruwa is the focal point of the Minneriya National Park.",
+    "h1WonderMinneriya": "Wonder of Minneriya",
+    "descriptionWonderMinneriya": "Minneriya National Park is home to the world’s largest known gathering of Asian elephants. During this period, herds of up to 350 elephants are seen at the 8,890-hectare park within a few square kilometers of the Minneriya Tank. According to some reports, there are as many as 700 elephants. In August and September each year, during the dry season, wild elephants migrate from Wasgamuwa National Park to Minneriya National Park in search of food and shelter. Tourists visit Minneriya National Park largely because of elephants, especially in the dry season.",
+    
+  
+     
+
+        "tableHeading": "About Animals",
+        "animalTH": "Animal",
+        "factTH": "Interesting fact",
+        "imgTH": "Picture",
+        "exploreTH": "Explore",
+
+
+        "elephant": "Srilankan Elephants",
+        "elephantDescription": "Elephas maximus maximus Linnaeus, the Sri Lankan subspecies is the largest and the darkest among Asian elephants. Patches of depigmented areas with no skin color on the ears, face, trunk, and belly morphologically differentiate it from the others.",
+        "parakeet": "Layard's parakeet",
+        "parakeetDescription": "Bright green, long-tailed parrot, with a gray hood and conspicuous black throat. The beak is red-orange in males, but all dark in duller females. Small groups inhabit upper levels of humid forest in the Wet Zone and drier, wooded areas outside of that, in both the lowlands and hills. ",
+        "magpie": "Sri Lanka blue magpie",
+        "magpieDescription": "The Sri Lanka blue magpie or Ceylon magpie is a brightly coloured member of the family Corvidae, found exclusively in Sri Lanka. This species is adapted to hunting in the dense canopy, where it is highly active and nimble.Its flight is rather weak, though, and is rarely used to cover great distances.",
+        "footer": "Table Footer content"
+      
+      
+      }

@@ -1,0 +1,39 @@
+{
+    "h1AboutWilpattu": "About Wilpattu park",
+    "h2AboutWilpattu": "Introduction",
+    "descriptionAboutWilpattu": "Wilpattu is Sri Lanka’s largest national park with an area of 130,000 hectare. It is also the oldest national park which has been reopened after several years of closure due to the armed conflict in the country. A few decades ago it was Wilpattu that was known ahead of Yala for its Leopard population. A unique feature of Wilpattu national park is that the entire park is dotted with large sand rimmed natural lakes known as “Villus”. The Villus collects rain water and tends to attract wildlife especially during the times of drought.",
+    "h2WildlifeWilpattu": "Climate in the Wilpattu National Park",
+    "descriptionWilpattu": "The annual temperature in the Park is between 27°C to 30°C and its annual rainfall is approximately 900 mm. The Wilpattu National Park is situated in the dry zone but most of the time flora is very greenish and has plenty of water sources. The period between September to December is the rainy season while inter-monsoonal rains are expected between March to May. The period of drought in the Park extends from June to early September.",
+    "h1OurEndemic": "Our Endemic Animals",
+    "animalList": [
+        "1.Leopard (Panthera pardus kotiya)",
+        "2.Asian Elephant (Elephas maximus maximus)",
+        "3.SlothBear (Melursus ursinus)",
+        "4.Spotted Deer (Axis axis)"
+    ],
+    "h2OurEndemic": "Most Attractive Animals:",
+    "h2Birdlife": "Birdlife in the Wilpattu National Park",  
+    "descriptionBirdlife": "Wetland bird species found in the Wilpattu National Park include the Garganey, Pin tail, Whistling Teal, Spoonbill, White Ibis, Large White Egret, Cattle Egret and Purple Heron. Also, many species of Gulls, Terns, Owls, Kites and Eagles are also lives here. The endemic Sri Lanka Jungle fowl, Little Cormorant and the Painted Stork can also Can be seen.",
+    "h2Reptiles": "Reptiles and Amphibians in the Wilpattu National Park",
+    "descriptionReptiles": "Monitor Lizard, Mugger Crocodile, Common Cobra, Rat Snake, Indian Python, Pond Turtle and the Soft Shelled Turtle can be seen in Wilpattu National Park.", 
+    "h1Adventures": "Adventures Experiences",
+    "h3JeepSafari": "Jeep Safari",
+    "h3JeepSafari2": "Jeep Safari",
+    "descriptionJeepSafari": "Wilpattu is open from 6.00 a.m. to 6.00 p.m. and is accessible by way of jeep safaris. February to October is the best time to visit the park but there is always a crowd throughout the year",
+    "h3Tour": "Guided Wilpattu Tour",
+    "h3Tour2": "Guided Wilpattu Tour",
+    "descriptionTour": "Pick either a morning half day or evening half day safari in a 4x4 jeep, accompanied by a knowledgeable guide. We track for elusive Sri Lanka Leopard , highly thretened Sri Lankan Sloth Bears & Elephnats.",
+    "h3Camping": "Camping",
+    "h3Camping2": "Camping",
+    "descriptionCamping": "Get in touch with nature by sleeping outside under the stars in a standard tent with mattresses and linens; you'll also enjoy meals around the campfire.",
+    "h1OurRequest": "Our Request",
+    "h1Remember": "Remember Your life = Their lives",
+    "rulesList": [
+        "Read the rules and regulations of each national park BEFORE entering the park.",
+        "Do not enter the park without a recommended nature guide and at all times follow his advice.",
+        "Do not consume alcoholic beverages or travel under the influence when inside the park.",
+        "Once you are entering the domain of wild animals, always remember that you are in their territory and treat them with consideration."
+
+    ]
+
+  }

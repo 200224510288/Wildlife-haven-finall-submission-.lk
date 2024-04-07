@@ -1,0 +1,41 @@
+{
+    "h1AboutYala": "About Yala National Park",
+    "h2AboutYala": "Introduction",
+    "descriptionAboutYala": "Yala National Park (otherwise known as Ruhuna National Park) is one of Sri Lanka’s must-sees. Located tothe south east of the island, this exceptional game reserve is Sri Lanka’s most popular for very good reason. Thought to be home to the greatest density of leopards per square kilometre in the world, Yalacovers an area of 1,260 square kilometres and is sectionided into five blocks. Block I is the mostvisited portion of the reserve and the most rewarding destination for a leopard safari. Leopards are usually elusive, though in Yala, sightings of them are extremely good – you might see them basking in the sun atop rocky outcrops, in trees, crossing tracks and beside waterholes.",
+    "h2WildlifeYala": "Wildlife In Yala",
+    "descriptionWildlifeYala": "Yala National Park is the best reserve in Sri Lanka for seeing a wide variety of wildlife, and in  particular leopards, elephants and sloth bears.There are approximately 215 bird species resident in the park, including seven endemics, along with 44 mammals. The park is sectionided into five blocks of which  block I (where most game drives take place) is renowned for having the greatest density of leopards per square kilometre in the world. Many of the younger males have grown so used to their dominance within the reserve and the jeeps that seek them out that they saunter lazily along tracks and sunbathe on rocky outcrops in full view.",
+    "h1OurEndemic": "Our Endemic Animals",
+    "animalList": [
+        "1.Leopard (Panthera pardus kotiya)",
+        "2.Asian Elephant (Elephas maximus maximus)",
+        "3.SlothBear (Melursus ursinus)",
+        "4.Spotted Deer (Axis axis)"
+    ],
+
+    "h2OurEndemic": "Most Attractive Animals:",
+    "h2Birdlife": "Birdlife in the Yala National Park",  
+    "descriptionBirdlife": "Yala is one of the 70 Important Bird Areas (IBAs) in Sri Lanka.Of 215 bird species of the park, six are endemic to Sri Lanka. They are Sri Lanka grey hornbill, Sri Lanka junglefowl, Sri Lanka wood pigeon, crimson-fronted barbet, black-capped bulbul, and brown-capped babbler. The number of waterbirds inhabiting wetlands of Yala is 90 and half of them are migrants.Waterfowl (lesser whistling duck, garganey), cormorants (little cormorant, Indian cormorant), large waterbirds (grey heron, black-headed ibis, Eurasian spoonbill, Asian openbill, painted stork), medium-sized waders Tringa spp., and small waders Charadrius spp. are among the common waterbirds..",
+    "h2Reptiles": "Reptiles and Amphibians in the Yala National Park",
+    "descriptionReptiles": "Of the 46 species of reptiles recorded in Yala, five are endemic to Sri Lanka. Twenty-one species of amphibians and 21 species of fish can be found here while the coast forms a nesting ground for marine turtles. Often seen are the Mugger Crocodile and the Saltwater Crocodile as well.",
+    "h1Adventures": "Adventures Experiences",
+    "h3JeepSafari": "Jeep Safari",
+    "h3JeepSafari2": "Jeep Safari",
+    "descriptionJeepSafari": "Our Safari Jeep Tours in Yala & Bundala are planned during the optimum times to spot animals. Morning Yala & Bundala Safari Jeep Tour is from 6 AM to 10 AM and afternoon Yala & Bundala Safari Jeep Tour is from 3 PM to 6 PM. Our full day Yala & Bundala Safari Jeep Tour from 6 AM to 6 PM maximizes the viewing opportunities by venturing in to deep down in Yala Jungle, best for Leopard spotting..",
+    "h3Accommodation": "Accommodation",
+    "h3Accommodation2": "Accommodation",
+    "descriptionAccommodation": "Yala and Tissamaharama areas are ideal destinations to witness rural local culture of Sri Lanka while you are enjoying the wilderness of Yala National Park. Kayaking in Yoda Lake, joining with a villager for a village and bush walk, Cycling in the back roads bordering Yala National Park, visiting a typical village home, or even join with a local fishermen to go fishing in the lake as part of community tourism initiative and interact with friendly locals.",
+    "h3Camping": "Camping",
+    "h3Camping2": "Camping",
+    "descriptionCamping": "Stay at an air-conditioned luxury campsite located by one of the most greenish surroundings of the world. Breathe fresh air with high oxygen concentration. 100 % Eco friendly campsite run by solar power.",
+    "h1OurRequest": "Our Request",
+    "h1Remember": "Remember Your life = Their lives",
+
+    "rulesList": [
+        "Read the rules and regulations of each national park BEFORE entering the park.",
+        "Do not enter the park without a recommended nature guide and at all times follow his advice.",
+        "Do not consume alcoholic beverages or travel under the influence when inside the park.",
+        "Once you are entering the domain of wild animals, always remember that you are in their territory and treat them with consideration."
+
+    ]
+
+  }

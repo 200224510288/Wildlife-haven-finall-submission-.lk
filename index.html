@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srilankan Wildlife</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/homepart2.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body>
+    <main>
+        <header>
+    
+            <input type="checkbox" id="bars">
+            <nav class="nav-bar" id="navbar">
+                <div class="content">
+                    <div class="site-logo">
+                        <a href="#" class="logo-link">Wildlife-Haven.LK</a>
+                    </div>
+    
+                    <ul class="navigation">
+                        <li class="link"><a href="./index.html">home</a></li>
+    
+                        <li class="link"><a href="./2%20Introduction_page.html">Introduction</a></li>
+    
+    
+                        <li class="link"><a href="#next">National Parks<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-nav">
+                                <li class="link"><a href="./6%20Yala%20National%20Park.html">Yala Park</a></li>
+                                <li class="link"><a href="./7%20Wilpattu%20National%20Park.html">Wilpattu Park</a></li>
+                            </ul>
+                        </li>
+                        <li class="link"><a href="">Animals In Srilanka<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-nav">
+                                <li class="link"><a href="./Srilankan%20leopard.html">Leopard</a></li>
+                                <li class="link"><a href="./5%20Animals%20in%20Sri%20Lanka.html">Endemic-Animals</a></li>
+                            </ul>
+                        </li>
+                        <li class="link"><a href="./3%20Department%20of%20Wildlife%20Conservation.html">Conservation</a>
+                        </li>
+    
+    
+                        <li class="link"><a href="./newlogin2.html">Login</a></li>
+    
+    
+                    </ul>
+    
+                    <label for='bars' class="icon-bars"><i class="ri-menu-line"></i></label>
+                </div>
+            </nav>
+
+        </header>
+
+        <section class="mainDescription">
+
+            <section class="col">
+                <h1>Wonder of Srilankan Wildlife</h1>
+                <p>Sri Lanka's wildlife is as varied as the island itself, ranging from elephants and leopards to marine
+                    life and a vast number of different birds, and Sri Lanka is now one of the best places in the world
+                    to see whales, including the mighty blue whale.</p>
+                <button type="button" onclick="window.location.href='https://www.wildlifetourssrilanka.com/'">Learn
+                    more</button>
+            </section>
+            <section class="col5">
+                <section class="card card1">
+                    <a href="#parks">
+                        <h5>National Parks</h5>
+                    </a>
+                </section>
+
+                <section class="card card2">
+                    <a href="5%20Animals%20in%20Sri%20Lanka.html">
+                    <h5>Endemic Animals</h5>
+                    </a>
+                </section>
+
+            </section>
+        </section>
+
+    </main>
+    <!-- animal section  -->
+
+    <!-- jason part  -->
+    <div x-data="endemicData">
+
+        <section class="endemic">
+            <div class="heading">
+                <h1 id="title" x-text="h1Title"></h1>
+            </div>
+            <!-- pop up dilog button -->
+            <button onclick="showLoginDialog()" style="display: none;" id="editButton">Edit-Content</button>
+            <section class="container2">
+                <div class="column1">
+                    <div class="list">
+                        <h2 id="titleH2"><span x-text="h2Title"></span></h2>
+                        <!-- list section -->
+                        <ul id="animalList">
+                            <template x-for="animal in animalList">
+                                <li><span x-text="animal"></span></li>
+                            </template>
+                        </ul>
+                    </div>
+
+                    <section class="container-galary">
+                        <section class="heading-g">
+                            <h3>Iconic <span>Gallery</span></h3>
+                        </section>
+                        <section class="box">
+                            <section class="dream">
+                                <img src="./Images/ani1.jpg" alt="animal1" class="image">
+                                <img src="./Images/ani2.jpg" alt="animal2" class="image">
+                                <img src="./Images/ani3.jpg" alt="animal3" class="image">
+                            </section>
+                        </section>
+                    </section>
+                </div>
+
+                <section class="column1">
+                    <section class="text-boxa">
+                        <h2 id="birdsH2"><span x-text="h2Birds"></span></h2>
+                        <p id="birdsP"><span x-text="birdDescription"></span></p>
+                        <a href="https://www.natureodyssey.com/endemic-birds-of-sri-lanka.html" class="read-more">Main
+                            source</a>
+
+                            <h2 id="reptitlesH"><span x-text="reptitlesTitle"></span></h2>
+                            <p id="reptitlesP"><span x-text="reptilesDescription"></span></p>
+
+                        <a href="https://classicwild.lk/reptiles-amphibians.php" class="read-more">Main source</a>
+                    </section>
+                </section>
+
+
+
+            </section>
+
+
+
+            <!-- json part over  -->
+            <!-- end of animal section  -->
+
+
+            <!-- National park section -->
+            <section class="parks">
+                <section class="container3">
+
+                    <section class="column2">
+
+                        <section class="list1">
+                            <h2 id="parksH2"><span x-text="parkH2"></span></h2>
+
+                            <ul id="parkList">
+                                <template x-for="park in parksList">
+                                    <li><span x-text="park"></span></li>
+                                </template>
+                            </ul>
+                        </section>
+                        <section class="container-galary1">
+                            <section class="heading-g">
+                                <h3>Nation parks <span>Gallery</span></h3>
+                            </section>
+                            <section class="box">
+                                <section class="dream">
+                                    <img src="./Images/Horton%20Plains%20National%20Park.jpg" alt="Horton Plains National Park">
+                                    <img src="./Images/sin11.jpg" alt="sinharaja">
+                                    <img src="./Images/wilpattu.jpg" alt="wilpattu">
+                                </section>
+                            </section>
+                        </section>
+
+                    </section>
+                    <section class="column2">
+                        <section class="text-boxb">
+                            <h2 id="h2Introduction"><span x-text="h2IntroductionParks"></span></h2>
+                            <p id="pIntroduction"><span x-text="introductionParks"></span></p>
+                            <a href="https://www.galoyalodge.com/blog/national-parks-and-wildlife-in-sri-lanka/#:~:text=Sri%20Lanka's%20National%20Parks%20are,purpose%20of%20protecting%20wild%2Dnature."
+                                class="read-more">Main source</a>
+
+                            <h2 id="conservationH2"><span x-text="h2ConservationParks"></span></h2>
+                            
+                            <p id="conservationP"><span x-text="conservationParks"></span></p>
+
+                            <a href="https://www.galoyalodge.com/blog/national-parks-and-wildlife-in-sri-lanka/#:~:text=Sri%20Lanka's%20National%20Parks%20are,purpose%20of%20protecting%20wild%2Dnature."
+                                class="read-more">Main source</a>
+
+                        </section>
+                    </section>
+
+                </section>
+            </section>
+            <!-- end of park section  -->
+
+            <!-- neture lover part  -->
+            <section class="container4">
+                <section class="row4">
+                    <section class="col1">
+                        <section class="text-box">
+                            <h2 id="h1Lover"><span x-text="h1Lover"></span></h2>
+                            <p id="pLover"><span x-text="descriptionLover"></span></p>                            <a href="https://terrapass.com/blog/nature-lovers-concerns-environment/#:~:text=A%20nature%20lover%20is%20a,they%20can%20help%20one%20another."
+                                class="read-more">Main source</a>
+
+                        </section>
+                    </section>
+                    <section class="col2">
+                        <section class="container-galary3">
+                            <section class="box">
+                                <section class="dream">
+                                    <img src="./Images/lov11.jpg" alt="lover1">
+                                    <img src="./Images/lov3.png" alt="lover2">
+
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <!-- lover part end  -->
+        </section>
+
+    </div>
+
+    <!-- Pop up dialog -->
+
+    <div class="form-container">
+        <dialog id="login-dialog" style="max-height: 400px; overflow-y: auto;">
+            <h2>WildLife-Haven.LK</h2>
+            <p>you can edit the page content<br>********************************************</p>
+            <button type="button" class="close" id="btnClose"><i class="ri-close-fill"></i></button>
+            <h1 id="dialogTitle" contenteditable="true"></h1>
+
+            <h2 id="dialogTitle2" contenteditable="true"></h2>
+            <ul id="dialogList1" contenteditable="true"></ul>
+
+            <h2 id="dialogTitle3" contenteditable="true"></h2>
+            <p id="dialogDescription1" contenteditable="true"></p>
+
+            <h2 id="dialogTitle4" contenteditable="true"></h2>
+            <p id="dialogDescription2" contenteditable="true"></p>
+
+            <h2 id="dialogTitle5" contenteditable="true"></h2>
+            <ul id="dialogList2" contenteditable="true"></ul>
+
+            <h2 id="dialogTitle6" contenteditable="true"></h2>
+            <p id="dialogDescription3" contenteditable="true"></p>
+
+            <h2 id="dialogTitle7" contenteditable="true"></h2>
+            <p id="dialogDescription4" contenteditable="true"></p>
+
+            <h2 id="dialogTitle8" contenteditable="true"></h2>
+            <p id="dialogDescription5" contenteditable="true"></p>
+
+
+
+            <button type="button" id="btn" class="submit" aria-label="Submit">Submit</button>
+        </dialog>
+        <!-- End of pop up dialog -->
+    </div>
+
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h1>"Wildlife-Haven.lk"</h1>
+                <p>
+                    Sri Lanka is a wildlife enthusiast's paradise and has plenty to offer visitors interested in animal
+                    and birdlife. This tropical island harbours an incredible selection of flora and fauna and is home
+                    to some of the finest national parks of the subcontinent. Home to a variety of species including the
+                    elusive leopard, regal elephant, blue whale, and a whole host of exotic birds, below is a list of
+                    the best places to see sectionerse and exciting wildlife on a tailor-made holiday to Sri Lanka.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4>Links :</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About WildLife-Haven</a></li>
+                    <li><a href="#">Locaton</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__col1">
+                <h4>Stay Updated with Our Newsletter!</h4>
+                <form onsubmit="storeNewsLetter(); return false;">
+                    <i class="ri-mail-line"></i>
+                    <input type="email" id="emailInput" placeholder="Enter your email id" required>
+                    <button type="submit" id="submitNewsletteer"><i class="ri-arrow-right-line"></i></button>
+                </form>
+                <div class="social-icons">
+                    <h4>Follow Us</h4>
+                    <i class="ri-facebook-circle-line"></i>
+                    <i class="ri-messenger-line"></i>
+                    <i class="ri-whatsapp-line"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-youtube-line"></i>
+                </div>
+            </div>
+            <script>
+                function storeNewsLetter() {
+                    let email = document.getElementById("emailInput").value;
+
+                    let getEmail = JSON.parse(localStorage.getItem("newsLetter")) || [];
+
+                    if (getEmail.some(v => v.email === email)) {
+                        alert("Duplicate Email")
+                    } else {
+                        getEmail.push({
+                            "email": email,
+                        });
+                        localStorage.setItem("newsLetter", JSON.stringify(getEmail));
+                        alert("Registration Successful")
+                    }
+                }
+            </script>
+
+        </div>
+        <div class="footerBottom">
+            Copyright © WildLife-Haven.lk. All rights reserved.
+        </div>
+
+        <!-- sources  -->
+        <!-- https://www.pexels.com/search/forest/ -->
+        <!-- https://www.srilankatravelandtourism.com/beautiful/waterfalls/waterfalls-srilanka.php -->
+        <!-- https://terrapass.com/blog/nature-lovers-concerns-environment/#:~:text=A%20nature%20lover%20is%20a,they%20can%20help%20one%20another. -->
+        <!-- https://www.galoyalodge.com/blog/national-parks-and-wildlife-in-sri-lanka/#:~:text=Sri%20Lanka's%20National%20Parks%20are,purpose%20of%20protecting%20wild%2Dnature. -->
+        <!-- https://www.galoyalodge.com/blog/national-parks-and-wildlife-in-sri-lanka/#:~:text=Sri%20Lanka's%20National%20Parks%20are,purpose%20of%20protecting%20wild%2Dnature. -->
+        <!-- https://www.lonelyplanet.com/sri-lanka/the-hill-country/horton-plains-national-park-and-worlds-end/attractions/horton-plains-national-park/a/poi-sig/1195257/357476 -->
+        <!-- https://www.lonelyplanet.com/sri-lanka/the-south/bundala-national-park/attractions/bundala-national-park/a/poi-sig/1194743/357485 -->
+        <!-- https://www.srilankaecotourism.lk/eco_destination.php?eco=wasgamuwa-national-park -->
+        <!-- https://classicwild.lk/reptiles-amphibians.php -->
+        <!-- https://www.natureodyssey.com/endemic-birds-of-sri-lanka.html -->
+        <!-- https://www.jungledragon.com/specie/3454/sri_lankan_axis_deer.html -->
+        <!-- https://www.wildlifetourssrilanka.com/wildlife/wildlife-in-sri-lanka/the-sri-lankan-sloth-bear.html -->
+        <!-- https://www.worldwildlife.org/species/sri-lankan-elephant -->
+        <!-- https://leopardtrails.com/sri-lankan-leopard/ -->
+        <!-- https://www.wildlifetourssrilanka.com/ -->
+    </footer>
+    <script>
+        // Check if the value is set in localStorage
+        const changeStyle = localStorage.getItem('changeStyle');
+
+        if (changeStyle === 'true') {
+            // Change the style of the element
+            document.getElementById('editButton').style.display = 'block';
+
+            // Clear the value from localStorage so it doesn't trigger again
+            localStorage.removeItem('changeStyle');
+        }
+    </script>
+
+
+    <script src="./home.js"></script>
+</body>
+
+</html>

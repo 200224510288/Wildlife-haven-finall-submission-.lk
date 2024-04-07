@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=//, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main>
+        <header>
+
+            <section class="navbar">
+                <img src="./Images/wildlife-haven-high-resolution-logo-white-transparent.png" class="Logo">
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fa fa-bars"></i>
+                    </label>
+                    <ol>
+                        <li>
+                            <button class="home">
+                                <a href="#">Home</a>
+                            </button>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropbtn">PLACES</button>
+                            <section class="dropdown-list">
+                                <a href="6 Yala National Park.html">1.Yala National Park</a>
+                                <a href="7 Wilpattu National Park.html">2.Wilpathu National Park</a>
+                            </section>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropbtn">SPECIES</button>
+                            <section class="dropdown-list">
+                                <a href="5 Animals in Sri Lanka.html">1.Endemic Animals</a>
+                                <a href="Srilankan leopard.html">2.Srilankan Leopard</a>
+                            </section>
+                        </li>
+                        <li class="dropdown">
+                            <button class="dropbtn">ABOUT Wildlife</button>
+                            <section class="dropdown-list">
+                                <a href="2 Introduction_page.html">1.Introduction</a>
+                                <a href="3 Department of Wildlife Conservation.html">2.conservation</a>
+                            </section>
+                        </li>
+
+                        <button onclick="logOut()" style="float: right;">Logout</button>
+
+
+                    </ol>
+
+                </nav>
+            </section>
+
+        </header>
+
+
+        <section class="row">
+            
+            <section class="col">
+                <h1>Profile-Page</h1>
+                <h3>Welcome to WILDLIFE-HAVEN.LK</h3>
+                <h4>
+                    Your Name:           
+                <script>
+                    document.write(localStorage.getItem("name"));
+                </script>
+                </h4>
+                <h6>Your Email is:
+                    <script>
+                        document.write(localStorage.getItem("email"));
+                    </script>
+                </h6>
+                
+        <section id="admin-content" style="display: none;" class="col5">
+        <!-- Admin content goes here -->
+        <h2>Welcome Admin!</h2>
+        <p>how are you today sir</p>
+        <!-- Add your admin-specific content here -->
+        </section>
+            </section>
+      
+           
+        </section>
+    </section>
+
+    
+
+    <script>
+        // Retrieve query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const isAdmin = urlParams.get('admin');
+
+        // Check if user is admin and display admin content
+        if (isAdmin === "true") {
+            document.getElementById("admin-content").style.display = "block";
+        }
+    </script>
+</main>
+<!-- about animal section  -->
+   <section class="about1">
+    <div class="grid-container1"> 
+
+      <div class="item21">
+        <h1>"Wonder of Srilankan Wildlife"</h1>
+        <p>Sri Lanka is a wildlife enthusiast's paradise and has plenty to offer visitors interested in animal and birdlife. This tropical island harbours an incredible selection of flora and fauna and is home to some of the finest national parks of the subcontinent. Home to a variety of species including the elusive leopard, regal elephant, blue whale, and a whole host of exotic birds, below is a list of the best places to see diverse and exciting wildlife on a tailor-made holiday to Sri Lanka.</p>
+        <div class="list1">
+            <ul>
+               <li><a href="https://leopardtrails.com/sri-lankan-leopard/">Leopard (Panthera pardus kotiya)
+               </a></li>
+               <li><a href="https://www.worldwildlife.org/species/sri-lankan-elephant">Asian Elephant (Elephas maximus maximus)
+   
+               </a></li>
+               <li><a href="https://www.wildlifetourssrilanka.com/wildlife/wildlife-in-sri-lanka/the-sri-lankan-sloth-bear.html">Sloth Bear (Melursus ursinus)
+               </a></li>
+               <li><a href="https://www.jungledragon.com/specie/3454/sri_lankan_axis_deer.html">Spotted Deer (Axis axis)
+               </a></li>
+            </ul>
+       </div>          
+    </div>
+    <div class="item31">
+      </div>  
+      <div class="item41">     
+      </div>
+      <div class="item51">     
+      </div> 
+      <div class="item61">
+      </div> 
+    </div>  
+</section>
+   <!-- end of the park the section -->
+</body>
+<script>
+    function logOut(){
+        localStorage.removeItem("name");
+        localStorage.removeItem("email");
+        window.location.href="newlogin2.html"
+        }
+</script>
+</html>

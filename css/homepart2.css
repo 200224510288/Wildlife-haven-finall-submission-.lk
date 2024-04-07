@@ -1,0 +1,1054 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #082e3e;
+  --secondary-color: #e9c675;
+  --text-light: #cbd5e1;
+  --orange-color: #f35405;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Playfair Display", serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-image: url(../Images/pexels-anikó-liptai-19478151.jpg);
+    object-fit: cover;
+    background-size: cover;
+}
+
+
+/* style for popup page  */
+.form-container{
+    width: 80%;
+    left: 80%;
+    transform: translateX(-50%);
+
+}
+#login-dialog {
+
+    margin: 30vh auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 80%;
+    
+  }
+  dialog {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+  .dialog-content {
+    max-height: 400px;
+    overflow-y: auto;
+}
+.close {
+    position: absolute; 
+    top: -20px;
+    margin-right: 1px;
+    width: 40px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.submit{
+    position: absolute; 
+    width: 80px;
+    right: -10px;
+    margin-bottom: 10vh;
+    margin-right: 4vh;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+  /* Style for buttons */
+  #login-dialog button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color); /* Button background color */
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 72%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Style for buttons on hover */
+  #login-dialog button:hover {
+    background-color: var(--orange-color); /* Darker background color on hover */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .form-container {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .form-container {
+      width: 95%;
+    }
+  }
+
+  /* end style  */
+
+/* nav style start */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-image: url(../Images/pexels-anikó-liptai-19478151.jpg);
+    background-image: linear-gradient(to top,
+        rgba(255, 255, 255, 0),
+        var(--primary-color) 2rem);
+    z-index: 1000;
+  }    
+
+
+.nav-bar.active {
+
+    background-color: var(--primary-color);
+    box-shadow: 1px 1px 2px #a0b3e5;
+
+}
+
+.content {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1.6rem 1rem;
+}
+
+.nav-bar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-bar .site-logo {
+    padding: 0.5rem;
+}
+
+.nav-bar .site-logo .logo-link {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #ffffff;
+    border-top: 4px solid #ffffff;
+}
+
+.nav-bar .navigation {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.nav-bar .navigation .link a {
+    padding: 0.25rem 0.5rem;
+    font-weight: 500;
+    font-size: 21px;
+    text-transform: capitalize;
+    color: #ffffff;
+    border-top: 1px solid transparent;
+    transition: all 0.6s;
+}
+
+.nav-bar .navigation .link:hover a {
+    color: var(--secondary-color);
+    border-top: 1px solid var(--secondary-color);
+}
+.icon-bars,
+#bars {
+    display: none;
+}
+
+
+/* hamburger menu  */
+@media (max-width:700px) {
+    .icon-bars {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        position: relative;
+    }
+
+    .icon-bars i {
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .nav-bar .navigation {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 50vh;
+        background-color: var(--primary-color);
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        gap: 1.4rem;
+        transition: all 2s;
+    }
+
+    #bars:checked~.nav-bar .navigation {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
+
+nav ul li {
+    position: relative;
+    list-style-type: none;
+}
+
+nav ul li::after {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+nav ul li ul.sub-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #444759;
+    border-top: 1px solid #3d3f50;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.14), -1px 0px 1px rgba(0, 0, 0, 0.14);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+    text-align: center;
+}
+
+nav ul li:hover ul.sub-nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+nav ul li ul.sub-nav li {
+    color: #eee;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px 0;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li ul.sub-nav li:hover {
+    color: #ea3b50;
+    background-color: #555;
+    box-shadow: 0 0;
+}
+/* end of nav style  */
+
+button{
+    width: 180px;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 12px 0;
+    background: var(--primary-color);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+     .mainDescription{
+        display: flex;
+        height: 100vh;
+        height: auto;
+        align-items: center;
+        margin-right: 10%;            
+    } 
+    
+    .col{
+        margin: 10%;
+        background-color: white;
+        margin-top: 50vh;
+        opacity: 0.9;
+        box-shadow: 0 0 20px rgb(2, 2, 2);
+        padding: 5px;
+        border-radius: 10px;
+    
+    }
+    .col5{
+        margin-top: 20vh;
+        margin-right: 10%;
+    }
+    .col h1 {
+        font-family: "Poppins", sans-serif;
+        color: #0a0a0a;
+        font-size: 50px;
+        font-weight: 500;
+        margin-left: 20px;
+        
+    }
+    .col p {
+        color: #0c0c0c;
+        font-size: 20px;
+        line-height: 25px;
+        margin-left: 20px;
+        
+    }
+    @media screen and (max-width: 878px) {
+        .mainDescription{
+            flex-direction: column;
+            margin-right: 10%;
+            width: 94%;
+            height: 150vh;
+        }
+        .col{
+            margin-top: 20vh;
+        }
+        .col5{
+           display: none;
+           
+        }
+      
+    }
+
+ol li {
+    color: #000000;
+    font-size: 35px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    margin-left: 20%;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+
+}
+.card p{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 20px #ffffff;
+    font-size: 23px;
+
+}
+.card1{
+    background-image: url(../Images/deston.jpg);
+}
+.card2{
+    background-image: url(../Images/about\ uss.jpg);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: #ffffff;
+    font-size: 40px;
+    text-shadow: 0 0 5px #000000;
+    text-align: center;
+    
+}
+main{
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.01)), url(../Images/pexels-anikó-liptai-19478151.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    box-sizing: border-box;
+   
+}
+
+ /* about srilankan animals part  */
+ .endemic{
+    
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.672);
+    border-radius: 18px;
+    position: relative;
+    margin: 20px;
+    
+}
+.container2{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 20px rgb(114, 113, 113);
+    /* margin: 5px; */
+    border-radius: 10px;
+    background-color: #f7f7f7;
+}
+.list{
+max-width: 600px;
+margin: 49px auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 9px;
+box-shadow: 0 0 10px #050505db;
+
+}
+.heading h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-shadow: 0 0 5px #999;
+    text-align: center;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+    margin-top:2%;
+}
+.heading h1::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+
+}
+
+
+.column1 ul{
+    font-size: 25px;
+    display: block;
+    list-style-type: disc;
+    margin-block-end: 0em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    padding-inline-start: 40px;
+  }
+
+.column1 ul li{
+margin-top: 20px;
+}
+
+.list li:hover{
+box-shadow: 0 0 10px rgb(7, 7, 7);
+
+
+}
+.list a {
+text-decoration: none;
+color: #000000;
+font-weight: bold;
+}
+.container2 h2{
+font-size: 30px;
+color: #000;
+margin-top: 30px;
+margin-bottom: 20px;
+position: relative;
+text-align: center;
+}
+.text-boxa{
+    box-shadow: 0 0 10px #050505db;
+    margin-top: 6.5%;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.column1 {
+flex: 1;
+padding: 10px;
+}
+.column1 p{
+
+margin: 5%;
+margin-bottom: 10px;
+font-size: 25px;
+}
+.read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #085b29;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-bottom: 14px;
+    margin-left: 30px;
+    margin-right: auto;
+    transition: 0.3s ease;
+    
+
+}
+.read-more:hover{
+    background-color: #43e248;
+}
+/* photos part  */
+.container-galary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.container-galary .heading-g{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container-galary .heading-g h3{
+    font-size: 30px;
+    font-weight: bolder;
+    border-bottom: 3px solid #222;
+    padding-bottom: 10px;
+}
+.container-galary .heading-g h3 span{
+    font-weight: 100;
+}
+.container-galary .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+   
+}
+.container-galary .box .dream{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin-left: 2%;
+    
+}
+.container-galary .box .dream img{
+    width: 80%;
+    height: 260px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+  
+}
+@media screen and (max-width: 1100px) {
+    .container-galary .box .dream{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 14%;
+        
+    }
+    .container-galary .box .dream img{
+        height: 280px;
+        width: 90%;
+        margin-left: -33px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+.container2{
+flex-direction: column;
+}
+
+.container2 h2{
+font-size: 25px;
+font-family: "Poppins", sans-serif;
+color: #000;
+margin-bottom: 20px;
+position: relative;
+text-align: center;
+}
+.heading h1{
+font-family: var(--header-font);
+font-size: 40px;
+text-shadow: 0 0 5px #999;
+
+color: #000;
+margin-bottom: 20px;
+position: relative;
+margin-top:10px;
+}
+.list li{
+    font-size: 25px;
+
+}
+
+}
+ /* end of animal part  */
+
+/* national park section */
+.parks{
+    
+    align-items: center;
+    background-color: #eae8e8;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.672);
+    border-radius: 18px;
+    position: relative;
+    margin: 20px;
+    
+}
+.container3{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 20px rgb(114, 113, 113);
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+}
+.list1{
+max-width: 600px;
+margin: 49px auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 9px;
+box-shadow: 0 0 10px #050505db;
+
+}
+.heading1 h1{
+    font-family: var(--header-font);
+    font-size: 60px;
+    text-shadow: 0 0 5px #999;
+    text-align: center;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+    margin-top:2%;
+}
+.heading1 h1::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+
+}
+
+
+.list1 ul{
+    display: block;
+    list-style-type: decimal;
+    margin-block-end: 0em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    padding-inline-start: 40px;
+}
+
+.list1 li {
+font-size: 25px;
+margin: 15px 0;
+padding: 15px;
+background-color: #f1f1f1;
+border-radius: 4px;
+cursor: pointer;
+transition: 1s;
+
+}
+.list1 li:hover{
+box-shadow: 0 0 10px rgb(7, 7, 7);
+}
+.list1 a {
+text-decoration: none;
+color: #000000;
+}
+.container3 h2{
+font-size: 30px;
+color: #000;
+margin-top: 30px;
+margin-bottom: 20px;
+position: relative;
+text-align: center;
+}
+.text-boxb{
+    box-shadow: 0 0 10px #050505db;
+    margin-top: 6.5%;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.column2 {
+flex: 1;
+padding: 10px;
+}
+.column2 p{
+
+margin: 5%;
+margin-bottom: 10px;
+font-size: 25px;
+}
+.read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #085b29;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-bottom: 14px;
+    margin-left: 30px;
+    margin-right: auto;
+    transition: 0.3s ease;
+    
+
+}
+.read-more:hover{
+    background-color: #43e248;
+}
+/* photos part  */
+.container-galary1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: 40px 20px 0 20px; */
+}
+.container-galary1 .heading-g{
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container-galary1 .heading-g h3{
+    font-size: 30px;
+    font-weight: bolder;
+    border-bottom: 3px solid #222;
+    padding-bottom: 10px;
+}
+.container-galary1 .heading-g h3 span{
+    font-weight: 100;
+}
+.container-galary1 .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+   
+}
+.container-galary1 .box .dream{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin-left: 2%;
+    
+}
+.container-galary1 .box .dream img{
+    width: 80%;
+    height: 280px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+  
+}
+@media screen and (max-width: 1100px) {
+    .container-galary1 .box .dream{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 14%;
+        
+    }
+    .container-galary1 .box .dream img{
+        height: 280px;
+        width: 90%;
+        margin-left: -33px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+.container3{
+flex-direction: column;
+}
+
+.container3 h2{
+font-size: 25px;
+font-family: "Poppins", sans-serif;
+color: #000;
+margin-bottom: 20px;
+position: relative;
+text-align: center;
+}
+.heading1 h1{
+font-family: var(--header-font);
+font-size: 45px;
+text-shadow: 0 0 5px #999;
+
+color: #000;
+margin-bottom: 20px;
+position: relative;
+margin-top:10px;
+}
+
+}
+/* end of park section */
+
+/* lover section  */
+.container4{
+    display: flex;
+    justify-content: center;
+    background: #ededed;
+}
+.container4 .row4{
+    display: flex;
+    box-shadow: 0 0 10px rgb(5, 5, 5);
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.col1{
+    flex-basis: 55%;
+}
+.col1 .text-box{
+    margin-right: 40px;
+    margin-left: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%
+    
+}
+.text-box h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}         
+.text-box p{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1100px) {
+    .container4{
+        flex-direction: column;
+    }
+
+    .text-box h2{
+        margin-left: 10%;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }         
+    
+    .container4 .row4 {
+       flex-direction: column;
+        box-shadow: 0 0 10px rgb(5, 5, 5);
+        border-radius: 10px;
+        margin: 10px;
+    
+    }
+}
+/* lover photos part  */
+.container-galary3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: 40px 20px 0 20px; */
+}
+
+.container-galary3 .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+   
+}
+.container-galary3 .box .dream{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin-left: 2%;
+    
+}
+.container-galary3 .box .dream img{
+    width: 100%;
+    height: 300px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    margin-top: 18%;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(5, 5, 5);
+
+
+  
+}
+@media screen and (max-width: 1100px) {
+    .container-galary3 .box .dream{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* margin-left: 14%; */
+        
+    }
+    .container-galary3 .box .dream img{
+        height: 280px;
+        width: 90%;
+        border-radius: 30px;
+        margin-left: 20px;
+       
+    }
+}
+/* end of lover section */
+
+ /* fotter part  */
+
+ 
+ .footer {
+    margin-top: 10vh;
+    background-image: url(../Images/pexels-anikó-liptai-19478151.jpg);
+    background-image: linear-gradient(to bottom,
+        rgba(255, 255, 255, 0),
+        var(--primary-color) 4rem);
+    
+  }
+  /* main container */
+  .footer__container {
+    display: grid;
+    gap: 4rem 2rem;
+   
+  } 
+  /* for the first section */
+  .footer__col:first-child {
+    max-width: 800px;
+  }
+  .footer__col p {
+    color: var(--text-light);
+    margin-left: 5%;
+  }
+  .footer__col h1 {
+    color: var(--text-light);
+    font-size: 50px;
+    margin-left: 15%;
+  }
+  
+  .footer__col h4 {
+    margin-bottom: 1rem;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--text-light);
+  }
+  .footer__col1{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.776);
+    border-radius: 20px;
+
+  }
+  .footer__col1 h4 {
+
+    margin: 1rem;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--text-light);
+  }
+
+  .footer__links {
+    list-style: none;
+    display: grid;
+    gap: 1rem;    
+    margin-left: 30px;
+
+  }
+  
+  .footer__links a {
+    color: var(--text-light);
+  }
+  
+  .footer__links a:hover {
+    color: var(--secondary-color);
+  }
+  
+  .footerBottom {
+    border-top: 1px solid white;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
+
+  }
+  /* adding a form for the newsletter */
+  .footer__col1 form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+  }
+  .footer__col1 form i{
+    font-size: 30px;
+    margin-right: 5%;
+  }
+ .footer__col1 .ri-mail-line{
+  font-size: 40px;
+ }
+
+ /* for the placeholder */
+ .footer__col1 form input{
+    width: 100%;
+    font-size: 25px;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+
+ }
+ .footer__col1 form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+ }
+ .footer__col1 form button i{
+    font-size: 30px;
+    margin-right: 10px;
+    color: var(--white);
+ }
+ .social-icons{
+    margin: 1rem;
+
+ }
+ .social-icons i{
+   font-size: 40px;
+   margin-right: 10px;
+   color: var(--white);
+   transition: 0.5s;
+   cursor: pointer;
+ 
+ }
+
+ .social-icons i:hover{
+   color: red;
+   font-size: 50px;
+   text-decoration: underline;
+
+}
+
+@media (min-width: 768px)  {
+  
+    .footer__container {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+    
+  }
+
+

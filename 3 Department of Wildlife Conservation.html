@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>conservation</title>
+    <link rel="stylesheet" href="./css/conservation.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <main>
+        <header>
+
+            <input type="checkbox" id="bars">
+            <nav class="nav-bar" id="navbar">
+                <div class="content">
+                    <div class="site-logo">
+                        <a href="#" class="logo-link">Wildlife-Haven.LK</a>
+                    </div>
+
+                    <ul class="navigation">
+                        <li class="link"><a href="./index.html">home</a></li>
+
+                        <li class="link"><a href="./2 Introduction_page.html">Introduction</a></li>
+
+
+                        <li class="link"><a href="#next">National Parks<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-nav">
+                                <li class="link"><a href="./6 Yala National Park.html ">Yala Park</a></li>
+                                <li class="link"><a href="./7 Wilpattu National Park.html ">Wilpattu Park</a></li>
+                            </ul>
+                        </li>
+                        <li class="link"><a href="">Animals In Srilanka<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-nav">
+                                <li class="link"><a href="./Srilankan leopard.html ">Leopard</a></li>
+                                <li class="link"><a href="./5 Animals in Sri Lanka.html">Endemic-Animals</a></li>
+                            </ul>
+                        </li>
+                        <li class="link"><a href="./3 Department of Wildlife Conservation.html">Conservation</a></li>
+
+
+                        <li class="link"><a href="./newlogin2.html">Login</a></li>
+
+
+                    </ul>
+
+                    <label for='bars' class="icon-bars"><i class="ri-menu-line"></i></label>
+                </div>
+            </nav>
+            </section>
+
+        </header>
+
+        </section>
+
+        <section class="container"></section>
+        <section class="row">
+            <section class="col">
+                <h1>Department Of<br> Wildlife Conservation.</h1>
+                <p>The Department of Wildlife Conservation has been entrusted with the responsibility of preserving eco
+                    system endowed with various plants and animal species which has inherited the country with enormous
+                    bio-sectionersity.</p>
+
+                <button type="button"
+                    onclick="window.location.href='https://www.mwfc.gov.lk/department-of-wildlife-conservation/'"
+                    class="read-more">Learn More</button>
+
+            </section>
+            <section class="col1">
+                <section class="card card1">
+                    <a href="#about">
+                        <h5>About Department
+                        </h5>
+                    </a>
+                </section>
+                <section class="card card2">
+                    <a href="#protect">
+                        <h5>Protected Areas.</h5>
+                    </a>
+                    <br>
+                </section>
+            </section>
+
+        </section>
+        </section>
+    </main>
+
+
+    <!-- about part  -->
+    <section x-data="conservationData">
+
+        <section class="conservation">
+            <!-- pop up dilog button -->
+
+            <button onclick="showLoginDialog()" style="display: none;" id="editButton">Edit-Content</button>
+
+            <section class="container1">
+                <section class="column">
+                    <section class="heading1">
+
+                        <h1 x-text="h1Conservation" id="conservationH1"></h1>
+                    </section>
+
+                    <section class="slider1">
+                        <img src="./Images/conservation collage.jpg">
+
+                    </section>
+                </section>
+                <section class="column">
+                    <h2 x-text="h2Conservation" id="conservationH2"></h2>
+                    <p x-text="descriptionConservation" id="conservationDescription"></p>
+                    <a href="https://www.mwfc.gov.lk/department-of-wildlife-conservation/" class="read-more">Main
+                        source</a>
+                    <h2 x-text="h2Responsibilities" id="responsiblitiesH2"></h2>
+                    <p x-text="descriptionResponsibilities" id="responsiblitiesP"></p>
+                    <a href="https://www.mwfc.gov.lk/department-of-wildlife-conservation/" class="read-more">Main
+                        source</a>
+
+
+                </section>
+
+            </section>
+        </section>
+
+        <section class="location">
+            <section class="container2">
+                <section class="column1">
+                    <section class="heading2">
+
+                        <h1 x-text="h1Location" id="locationH1"></h1>
+                    </section>
+                    <section class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884.8152703440737!2d79.91868271575945!3d6.89708056440819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705113426472!5m2!1sen!2slk"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+
+                </section>
+                <section class="column1">
+                    <h2 x-text="h2Location" id="locationH2">Direction</h2>
+                    <ul id="loctionList1">
+                        <template x-for="place in directonList">
+                            <li x-text="place"></li>
+                        </template>
+                    </ul>
+                </section>
+
+            </section>
+        </section>
+        <!-- vedio section  -->
+        <section class="introduction1" id="specis">
+            <section class="container3">
+                <section class="column4">
+                    <section class="slider1">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/2Xs2k0pBM8Y?si=QKVYNfnHdSQ5k7gC"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </section>
+                </section>
+
+                <section class="column4">
+                    <section class="heading4">
+                        <h1 x-text="h1Concern" id="concernH1"></h1>
+                    </section>
+                    <p x-text="descriptionConcern" id="descripConcern"></p>
+                    <a href="https://www.pettitts.co.uk/blog/sri-lanka-wildlife" class="read-more">Main source</a>
+                </section>
+            </section>
+        </section>
+        <!-- end of vedio section  -->
+        <section class="container-galary">
+            <section class="heading-g">
+                <h3>Protected-Areas <span>Gallery</span></h3>
+            </section>
+            <section class="box">
+                <section class="dream">
+
+                    <img src="./Images/sin11.jpg" alt="sinharaja">
+                    <img src="./Images/kumana.jpg" alt="kumana">
+                    <img src="./Images/Horton Plains National Park.jpg" alt="hortan">
+                </section>
+            </section>
+        </section>
+        <section class="container-galary">
+
+            <section class="box">
+                <section class="dream">
+
+                    <img src="./Images/Sri_Pada_02.jpg" alt="siripada">
+                    <img src="./Images/mineriya.jpg" alt="minneriya">
+                    <img src="./Images/will.jpg" alt="wilpattu">
+                </section>
+                <a href="https://lk.chm-cbd.net/protected-areas?page=3" class="read-more">View More</a>
+
+            </section>
+        </section>
+
+        <!-- table section -->
+        <section id="table-part" class="table-container">
+            <h1 class="heading5" x-text="h1Protected"></h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th x-text="thProtected" id="parktable"></th>
+                        <th x-text="thPlace" id="factTable"></th>
+                        <th x-text="thBrief" id="imgTable"></th>
+                        <th x-text="thPicture" id="exploreTable"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Animal" x-text="tdHortain" id="hortainTable"></td>
+                        <td data-label="Interesting Fact" x-text="tdHortainDescription" id="hortonDescrption"></td>
+                        <td data-label="Image"><img src="./Images/hortain place.jpg" alt="hortan place"></td>
+                        <td data-label="Explore"><a href="https://www.srilankaview.com/horton_plains.htm"
+                                class="btn">Explore</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Animal" x-text="tdGaloya" id="galoyaTable"></td>
+                        <td data-label="Interesting Fact" x-text="tdGaloyaDescription" id="galoyaDecription"></td>
+                        <td data-label="Image"><img src="./Images/Gal oya.jpg" alt="gal oya"></td>
+                        <td data-label="Explore"><a href="https://www.galoyanationalpark.com/" class="btn">Explore</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Animal" x-text="tdWasgamuwa" id="wasgamuwaTable"></td>
+                        <td data-label="Interesting Fact" x-text="tdwasgamuwaDescription" id="wasgamuwaBrief"></td>
+                        <td data-label="Image"><img src="./Images/wasgamuwa.jpg" alt="wasgamuwa"></td>
+                        <td data-label="Explore"><a
+                                href="https://www.srilankaecotourism.lk/eco_destination.php?eco=wasgamuwa-national-park"
+                                class="btn">Explore</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" x-text="h1Protected">Protected Places</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </section>
+    <!-- end of json data part  -->
+
+    <!-- Pop up dialog -->
+
+    <div class="form-container">
+        <dialog id="login-dialog" style="max-height: 400px; overflow-y: auto;">
+            <h2>WildLife-Haven.LK</h2>
+            <p>you can edit the page content<br>********************************************</p>
+            <button type="button" class="close" id="btnClose"><i class="ri-close-fill"></i></button>
+            <h1 id="dialogTitle" contenteditable="true"></h1>
+            <h2 id="dialogTitle2" contenteditable="true"></h2>
+            <p id="descriptionP" contenteditable="true"></p>
+            <h2 id="dialogTitle3" contenteditable="true"></h2>
+            <p id="descriptionP2" contenteditable="true"></p>
+            <h1 id="dialogTitle4" contenteditable="true"></h1>
+            <h2 id="dialogTitle5" contenteditable="true"></h2>
+            <ul id="loctionList" contenteditable="true"></ul>
+            <h1 id="dialogTitle6" contenteditable="true"></h1>
+            <p id="descriptionP3" contenteditable="true"></p>
+
+            <textarea id="parktableEdit" class="tabletitle" ></textarea>
+            <textarea id="factTableEdit" class="tabletitle" ></textarea>
+            <textarea id="hortainTableEdit" class="tabledata" ></textarea>
+            <textarea id="hortonDescrptionEdit" class="tabledata"></textarea>
+
+            <textarea id="galoyaTableEdit" class="tabletitle" ></textarea>
+            <textarea id="tdGaloyaDescriptionEdit" class="tabletitle" ></textarea>
+            <textarea id="wasgamuwaTableEdit" class="tabledata" ></textarea>
+            <textarea id="tdwasgamuwaDescriptionEdit" class="tabledata"></textarea>           
+
+            <button type="button" id="btn">Submit</button>
+        </dialog>
+    </div>
+    <!-- End of pop up dialog -->
+
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h1>"Wildlife-Haven.lk"</h1>
+                <p>
+                    Sri Lanka is a wildlife enthusiast's paradise and has plenty to offer visitors interested in animal
+                    and birdlife. This tropical island harbours an incredible selection of flora and fauna and is home
+                    to some of the finest national parks of the subcontinent. Home to a variety of species including the
+                    elusive leopard, regal elephant, blue whale, and a whole host of exotic birds, below is a list of
+                    the best places to see sectionerse and exciting wildlife on a tailor-made holiday to Sri Lanka.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4>Links :</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About WildLife-Haven</a></li>
+                    <li><a href="#">Locaton</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__col1">
+                <h4>Stay Updated with Our Newsletter!</h4>
+                <form onsubmit="storeNewsLetter(); return false;">
+                    <i class="ri-mail-line"></i>
+                    <input type="email" id="emailInput" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="ri-arrow-right-line"></i></button>
+                </form>
+                <div class="social-icons">
+                    <h4>Follow Us</h4>
+                    <i class="ri-facebook-circle-line"></i>
+                    <i class="ri-messenger-line"></i>
+                    <i class="ri-whatsapp-line"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-youtube-line"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            Copyright © WildLife-Haven.lk. All rights reserved.
+        </div>
+        <!-- sources -->
+        <!-- https://www.pexels.com/search/forest/ -->
+        <!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css -->
+        <!-- https://www.mwfc.gov.lk/department-of-wildlife-conservation/  -->
+        <!-- https://www.mwfc.gov.lk/department-of-wildlife-conservation/ -->
+        <!-- https://www.youtube.com/embed/2Xs2k0pBM8Y?si=QKVYNfnHdSQ5k7gC -->
+        <!-- https://www.pettitts.co.uk/blog/sri-lanka-wildlife -->
+        <!-- https://lk.chm-cbd.net/protected-areas?page=3 -->
+        <!-- https://www.srilankaview.com/horton_plains.htm -->
+        <!-- https://www.galoyanationalpark.com/ -->
+        <!-- https://www.srilankaecotourism.lk/eco_destination.php?eco=wasgamuwa-national-park -->
+
+        <script>
+            // Check if the value is set in localStorage
+            const changeStyle = localStorage.getItem('changeStyle');
+    
+            if (changeStyle === 'true') {
+                // Change the style of the element
+                document.getElementById('editButton').style.display = 'block';
+    
+                // Clear the value from localStorage so it doesn't trigger again
+                localStorage.removeItem('changeStyle');
+            }
+        </script>
+        <!-- assingig the script  -->
+
+        <script src="./conservation.js"></script>
+
+</body>
+
+</html>

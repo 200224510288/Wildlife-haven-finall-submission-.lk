@@ -1,0 +1,32 @@
+
+  {
+    "h1Title": "Wonder Of Sri Lankan Wildlife",
+    "h2Title": "Sri Lankan Iconic Animals:",
+    "h2Birds": "Endemic Birds of Sri Lanka",
+    "reptitlesTitle": "Reptiles and Amphibians in Sri Lanka",
+    "birdDescription": "Currently, there are 33 identified species of endemic birds in Sri Lanka, out of which most are found in the wet zone. The months of November through to April are considered the best months of the year to spot most of these endemics. The Kithulgala and Sinharaja forest reserves in the low lands are amongst the top spots to view a majority of these endemics. Horton Plains National Park in the hills is the best place to catch the endemics that enjoy their life at altitude.",
+    "reptilesDescription": "When it comes to amphibians, Sri Lanka has over 116 species, and out of which over 96 species are endemic to the island. The reptile diversity is equally impressive with the island with over 210 known species on the island out of which over 125 are endemic and found nowhere else in the world. Adding to this, the loss of habitats has also resulted in many of these species to be endangered.",
+
+    "animalList": [
+      "Leopard (Panthera pardus kotiya)",
+      "Asian Elephant (Elephas maximus maximus)",
+      "Sloth Bear (Melursus ursinus)",
+      "Spotted Deer (Axis axis)"
+    ],
+    
+    "parkH2": "National Parks Of Srilanka:",
+    "h2IntroductionParks": "Breif Introduction",
+    "introductionParks": "When you hear the words ‘National Park’ you might think of places like The Grand Canyon, Yosemite, and Yellowstone. When asked about National Parks, not many people will think about Sri Lanka. But as a matter of fact, Sri Lanka boasts some of the best National Parks in the world! Sri Lanka encompasses a total of 26 National Parks which collectively cover 5,734km2, which may not seem like a lot, but relative to the small size of Sri Lanka (65,610km2) this means that almost 9% of Sri Lanka’s total area consists of National Park. Sri Lanka’s National Parks are a haven of flora, fauna, and conservation, and are also extremely important in the survival of many animals such as the Sri Lankan Elephant",
+    "h2ConservationParks": "A history of conservation",
+    "conservationParks": "Sri Lanka’s national parks are governed by the 1937 Fauna and Flora Protection Ordinance (No.2) and can also only be created, abolished or changed by ministerial order from the government. The first two official national parks in Sri Lanka are Yala and Wilpattu National Parks. Both were established on February the 25th 1938. All 26 of the Sri Lankan national parks cover a variety of different geography and habitats.",
+    "parksList": [
+      "Wasgamuwa National Park",
+      "Bundala National Park",
+      "Yala National Park",
+      "Horton Plains National Park"
+    ],
+    "h1Lover": "Why Should We Be Nature Lovers?",
+    "descriptionLover": "Mother Earth is a rare feat, as scientists have spent many years searching for other planets capable of sustaining life only to come up empty-handed. And when you have something so rare that also holds such beauty, it’s worthwhile to protect it.Plus, as nature lovers, our lifestyle changes will set up the next generations for a better future. We all want our children to succeed and live long, healthy lives, and these steps can help assure that — at least from an environmental standpoint."
+    
+    
+  }

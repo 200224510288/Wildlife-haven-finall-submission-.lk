@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilpattu Park</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/wilpattu.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- to display icons on footer -->
+    <!-- script alpine  -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+
+            <input type="checkbox" id="bars">
+            <nav class="nav-bar" id="navbar">
+                <div class="content">
+                    <div class="site-logo">
+                        <a href="#" class="logo-link">Wildlife-Haven.LK</a>
+                    </div>
+
+                    <ul class="navigation">
+                        <li class="link"><a href="./index.html">home</a></li>
+
+                        <li class="link"><a href="./2 Introduction_page.html">Introduction</a></li>
+
+
+                        <li class="link"><a href="#next">National Parks<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-nav">
+                                <li class="link"><a href="./6 Yala National Park.html ">Yala Park</a></li>
+                                <li class="link"><a href="./7 Wilpattu National Park.html ">Wilpattu Park</a></li>
+                            </ul>
+                        </li>
+                        <li class="link"><a href="">Animals In Srilanka<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-nav">
+                                <li class="link"><a href="./Srilankan leopard.html ">Leopard</a></li>
+                                <li class="link"><a href="./5 Animals in Sri Lanka.html">Endemic-Animals</a></li>
+                            </ul>
+                        </li>
+                        <li class="link"><a href="./3 Department of Wildlife Conservation.html">Conservation</a></li>
+
+
+                        <li class="link"><a href="newlogin2.html">Login</a></li>
+
+
+                    </ul>
+
+                    <label for='bars' class="icon-bars"><i class="ri-menu-line"></i></label>
+                </div>
+            </nav>
+            </section>
+
+        </header>
+
+
+        <section class="word">
+            <span>W</span>
+            <span>I</span>
+            <span>L</span>
+            <span>P</span>
+            <span>A</span>
+            <span>T</span>
+            <span>T</span>
+            <span>U</span>
+        </section>
+
+        <section class="text-box1">
+
+
+            <h1></h1>
+            <p></p>
+            <a href="https://leopardtrails.com/wilpattu-national-park/" class="btn">Explore More</a>
+        </section>
+        </section>
+        </section>
+    </main>
+
+
+    <!-- editable AREA  -->
+    <div id="editableContent">
+
+        <!-- about willpattu section  -->
+        <section x-data="wilpattu">
+
+            <section class="About-wilpattu">
+                <!-- contain-editable-button  -->
+                <button onclick="showLoginDialog()" style="display: none;" id="editButton">Edit-Content</button>
+                <section class="container1">
+                    <section class="column">
+                        <section class="heading">
+
+                            <h1 id="about1" x-text="h1AboutWilpattu"></h1>
+                        </section>
+                        <section class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d252571.0709814398!2d80.0518306!3d8.4581819!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afdac7787e4bc27%3A0xcdd9a0715dad187c!2sWilpattu%20National%20Park!5e0!3m2!1sen!2slk!4v1704686455075!5m2!1sen!2slk"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </section>
+                        <section class="slider1">
+
+
+                        </section>
+                    </section>
+                    <section class="column">
+                        <h2 x-text="h2AboutWilpattu"></h2>
+                        <p x-text="descriptionAboutWilpattu"></p>
+                        <a href="https://leopardtrails.com/wilpattu-national-park/" class="read-more">Main source</a>
+                        <h2 x-text="h2WildlifeWilpattu"></h2>
+                        <p x-text="descriptionWilpattu"></p>
+                        <a href="https://www.wilpattunationalpark.com/visiting_wilpattu_national_park.php?lId=02"
+                            class="read-more">Main source</a>
+
+
+                    </section>
+
+                </section>
+            </section>
+            <section class="endemic">
+                <section class="container2">
+                    <section class="column1">
+                        <section class="heading">
+
+                            <h1 id="ende" x-text="h1OurEndemic"></h1>
+                        </section>
+                        <section class="list">
+                            <h2 x-text="h2OurEndemic"></h2>
+                            <ol>
+                                <template x-for="animal in animalList">
+                                    <li x-text="animal"></li>
+                                </template>
+                            </ol>
+                        </section>
+
+                    </section>
+                    <section class="column1">
+                        <h2 x-text="h2Birdlife"></h2>
+                        <p x-text="descriptionBirdlife"></p>
+                        <h2 x-text="h2Reptiles">
+                        </h2>
+                        <p x-text="descriptionReptiles"></p>
+                        <a href="https://www.wilpattunationalpark.com/visiting_wilpattu_national_park.php?lId=02"
+                            class="read-more">Main source</a>
+
+                        <section class="vdeo">
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/De6m2MwlZiE?si=nCc4w_E-VEQrXehH"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </section>
+                    </section>
+
+                </section>
+            </section>
+            <section class="Activities">
+                <section class="heading">
+
+                    <h1 id="act" x-text="h1Adventures"></h1>
+                </section>
+                <section class="card">
+                    <section class="face front">
+                        <img src="./Images/safari.jpg" alt="">
+                        <h3 x-text="h3JeepSafari"></h3>
+                    </section>
+                    <section class="face back">
+                        <h3 x-text="h3JeepSafari2"></h3>
+                        <p x-text="descriptionJeepSafari"></p>
+                        <section class="link">
+                            <a
+                                href="https://www.viator.com/tours/Wilpattu-National-Park/Willpattu-National-Park-Tour/d52062-87067P6">Details</a>
+                        </section>
+                    </section>
+                </section>
+                <section class="card">
+                    <section class="face front">
+                        <img src="./Images/camping.jpg" alt="">
+                        <h3 x-text="h3Camping"></h3>
+                    </section>
+                    <section class="face back">
+                        <h3 x-text="h3Camping2"></h3>
+                        <p x-text="descriptionCamping"></p>
+                        <section class="link">
+                            <a
+                                href="https://www.viator.com/tours/Wilpattu-National-Park/1-Night-Camping-in-Wilpattu-National-Park/d52062-16052P319">Details</a>
+                        </section>
+                    </section>
+                </section>
+                <section class="card">
+                    <section class="face front">
+                        <img src="./Images/guide.jpg" alt="">
+                        <h3 x-text="h3Tour"></h3>
+                    </section>
+                    <section class="face back">
+                        <h3 x-text="h3Tour2"></h3>
+                        <p x-text="descriptionTour"></p>
+                        <section class="link">
+                            <a
+                                href="https://www.viator.com/tours/Wilpattu-National-Park/Immersive-leopard-and-sloth-bear-safari-experience-Wilpattu-National-Park/d52062-54366P31">Details</a>
+                        </section>
+                    </section>
+                </section>
+
+
+
+            </section>
+            <section class="polution">
+                <section class="heading">
+
+                    <h1 id="Request" x-text="h1OurRequest"></h1>
+                </section>
+                <section class="row">
+                    <img src="./Images/pol4.jpg">
+                    <img src="./Images/pol2.jpg">
+                    <img src="./Images/pol3.jpeg">
+
+                </section>
+                <section class="row1">
+                    <section class="heading">
+
+                        <h1 id="about1" x-text="h1Remember"></h1>
+                    </section>
+                    <section class="list1">
+                        <ol>
+                            <template x-for="rule in rulesList">
+                                <li x-text="rule"></li>
+                            </template>
+                        </ol>
+
+                        <a href="https://www.ugaescapes.com/ulagalla/leisure/things-to-do/wilpattu-minneriya-national-parks.html"
+                            class="read-more">Main source</a>
+
+                    </section>
+
+
+
+                </section>
+            </section>
+            <!-- x-data section end  -->
+        </section>
+
+        <!-- end of editable area -->
+    </div>
+
+
+    <!-- footer part -->
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h1>"Wildlife-Haven.lk"</h1>
+                <p>
+                    Sri Lanka is a wildlife enthusiast's paradise and has plenty to offer visitors interested in animal
+                    and birdlife. This tropical island harbours an incredible selection of flora and fauna and is home
+                    to some of the finest national parks of the subcontinent. Home to a variety of species including the
+                    elusive leopard, regal elephant, blue whale, and a whole host of exotic birds, below is a list of
+                    the best places to see sectionerse and exciting wildlife on a tailor-made holiday to Sri Lanka.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4>Links :</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About WildLife-Haven</a></li>
+                    <li><a href="#">Locaton</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__col1">
+                <h4>Stay Updated with Our Newsletter!</h4>
+
+                <form onsubmit="storeNewsLetter(); return false;">
+                    <i class="ri-mail-line"></i>
+                    <input type="email" id="emailInput" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="ri-arrow-right-line"></i></button>
+                </form>
+
+                <div class="social-icons">
+                    <h4>Follow Us</h4>
+                    <i class="ri-facebook-circle-line"></i>
+                    <i class="ri-messenger-line"></i>
+                    <i class="ri-whatsapp-line"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-youtube-line"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            Copyright © WildLife-Haven.lk. All rights reserved.
+        </div>
+
+        <!-- sources -->
+        <!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css -->
+        <!-- https://leopardtrails.com/wilpattu-national-park/ -->
+        <!-- https://www.wilpattunationalpark.com/visiting_wilpattu_national_park.php?lId=02 -->
+        <!-- https://leopardtrails.com/sri-lankan-leopard/ -->
+        <!-- https://www.worldwildlife.org/species/sri-lankan-elephant -->
+        <!-- https://www.wildlifetourssrilanka.com/wildlife/wildlife-in-sri-lanka/the-sri-lankan-sloth-bear.html -->
+        <!-- https://www.jungledragon.com/specie/3454/sri_lankan_axis_deer.html -->
+        <!-- https://www.wilpattunationalpark.com/visiting_wilpattu_national_park.php?lId=02 -->
+        <!-- https://www.youtube.com/embed/De6m2MwlZiE?si=nCc4w_E-VEQrXehH -->
+        <!-- https://www.viator.com/tours/Wilpattu-National-Park/Willpattu-National-Park-Tour/d52062-87067P6 -->
+        <!-- https://www.viator.com/tours/Wilpattu-National-Park/1-Night-Camping-in-Wilpattu-National-Park/d52062-16052P319 -->
+        <!-- https://www.viator.com/tours/Wilpattu-National-Park/Immersive-leopard-and-sloth-bear-safari-experience-Wilpattu-National-Park/d52062-54366P31 -->
+        <!-- https://www.ugaescapes.com/ulagalla/leisure/things-to-do/wilpattu-minneriya-national-parks.html -->
+
+    </footer>
+
+    <!-- Pop up dialog -->
+
+    <div class="form-container">
+        <dialog id="login-dialog" style="max-height: 400px; overflow-y: auto;">
+            <h2>WildLife-Haven.LK</h2>
+            <p>you can edit the page content<br>********************************************</p>
+            <button type="button" class="close" id="btnClose"><i class="ri-close-fill"></i></button>
+            <textarea id="editedContent" rows="4" cols="50"></textarea>
+            <button type="button" id="btnSave">Save Changes</button>
+        </dialog>
+    </div>
+    <script>
+        // Check if the value is set in localStorage
+        const changeStyle = localStorage.getItem('changeStyle');
+
+        if (changeStyle === 'true') {
+            // Change the style of the element
+            document.getElementById('editButton').style.display = 'block';
+
+            // Clear the value from localStorage so it doesn't trigger again
+            localStorage.removeItem('changeStyle');
+        }
+    </script>
+
+    <script src="./wilpattu.js"></script>
+
+</body>
+
+</html>

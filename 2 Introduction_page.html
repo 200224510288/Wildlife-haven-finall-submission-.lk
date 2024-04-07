@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/introduction.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <header>
+
+            <input type="checkbox" id="bars">
+            <nav class="nav-bar" id="navbar">
+                <div class="content">
+                    <div class="site-logo">
+                        <a href="#" class="logo-link">Wildlife-Haven.LK</a>
+                    </div>
+
+                    <ul class="navigation">
+                        <li class="link"><a href="./index.html">home</a></li>
+                        <li class="link"><a href="./2 Introduction_page.html">Introduction</a></li>
+
+
+                        <li class="link"><a href="#next">National Parks<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-nav">
+                                <li class="link"><a href="./6 Yala National Park.html ">Yala Park</a></li>
+                                <li class="link"><a href="./7 Wilpattu National Park.html ">Wilpattu Park</a></li>
+                            </ul>
+                        </li>
+                        <li class="link"><a href="">Animals In Srilanka<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-nav">
+                                <li class="link"><a href="./Srilankan leopard.html ">Leopard</a></li>
+                                <li class="link"><a href="./5 Animals in Sri Lanka.html">Endemic-Animals</a></li>
+                            </ul>
+                        </li>
+                        <li class="link"><a href="./3 Department of Wildlife Conservation.html">Conservation</a></li>
+
+
+                        <li class="link"><a href="./newlogin2.html">Login</a></li>
+
+
+                    </ul>
+
+                    <label for='bars' class="icon-bars"><i class="ri-menu-line"></i></label>
+                </div>
+            </nav>
+            </section>
+
+        </header>
+
+        <section class="row">
+            <section class="col">
+                <h1>Srilankan Wildlife Introduction.</h1>
+                <p>Sri Lanka's wildlife is as varied as the island itself, ranging from elephants and leopards to marine
+                    life and a vast number of different birds, and Sri Lanka is now one of the best places in the world
+                    to see whales, including the mighty blue whale.</p>
+                <button type="button"
+                    onclick="window.location.href='https://en.wikipedia.org/wiki/Wildlife_of_Sri_Lanka'"
+                    class="read-more">Learn More</button>
+            </section>
+
+            <section class="col1">
+                <section class="card card1">
+                    <h5>Content.</h5>
+                    <a href="#intro">
+                        <ol>
+                            <li>Introduction.</li>
+                        </ol>
+                    </a>
+
+                    <a href="#specis">
+                        <ol>
+                            <li>About Species.</li>
+                        </ol>
+                    </a>
+                    <a href="#min">
+                        <ol>
+                            <li>Minneriya National Park.</li>
+                        </ol>
+                    </a>
+                    <a href="#sinha">
+                        <ol>
+                            <li>Sinharaja National Park.</li>
+                        </ol>
+                    </a>
+                    <a href="#table-part">
+                        <ol>
+                            <li>Endemic Species.</li>
+                        </ol>
+                    </a>
+                </section>
+            </section>
+        </section>
+    </main>
+
+
+
+    <!-- adding the javascript variable -->
+
+    <section x-data="introductionData">
+
+        <section class="introduction" id="intro">
+
+            <section class="heading">
+                <h1 x-text="h1Intro" id="titleH1"></h1>
+            </section>
+            <!-- pop up dilog button -->
+
+            <button onclick="showLoginDialog()" style="display: none;" id="editButton">Edit-Content</button>
+
+            <section class="container">
+                <section class="column1">
+                    <h2 x-text="h2Intro" id="title2"></h2>
+
+                    <p x-text="descriptionIntro" id="description1"></p>
+
+                    <a href="https://www.experiencetravelgroup.com/blog/best-wildlife-experiences-in-sri-lanka/"
+                        class="read-more">Main source</a>
+
+                    <section class="map">
+                        <iframe
+                            src="https://www.google.com/maps/d/embed?mid=1owKlahZr4VNg3hrSmF7Q4Z6Ng6M&hl=en_US&ehbc=2E312F"
+                            width="640" height="480"></iframe>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!-- vedio section -->
+        <section class="introduction1" id="specis">
+            <section class="container3">
+                <section class="column4">
+                    <section class="slider1">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/hTddDiwX9u4?si=oIziinIhZhLW7ZsR"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </section>
+                </section>
+
+                <section class="column4">
+                    <section class="heading4">
+                        <h1 x-text="h1Wonder" id="titleWonder"></h1>
+                    </section>
+                    <p x-text="descriptionWonder" id="PWonder"></p>
+                    <a href="https://www.pettitts.co.uk/blog/sri-lanka-wildlife" class="read-more">Main source</a>
+                </section>
+            </section>
+        </section>
+
+        <!-- end of wildlife introdution -->
+
+        <!-- sinharaja forest -->
+        <section class="sinharaja" id="sinha">
+            <section class="heading5">
+                <h1 x-text="h1Sinharaja" id="titleSinharaja"></h1>
+            </section>
+            <section class="container5">
+                <section class="column5">
+                    <section class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15859.595966770545!2d80.4497483102206!3d6.407012021553989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3e76bd109d45f%3A0x8c0ef1010649701b!2sSinharaja%20Forest%20Reserve!5e0!3m2!1sen!2slk!4v1703522433295!5m2!1sen!2slk"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+                </section>
+
+                <section class="column5">
+                    <section class="heading5">
+                        <h1 x-text="h1Location" id="locationH1"></h1>
+                    </section>
+                    <p x-text="descriptionLocation" id="locationP"></p>
+                    <a href="https://whc.unesco.org/en/list/405/" class="read-more">Main source</a>
+                </section>
+            </section>
+
+
+            <section class="container-galary">
+                <section class="heading-g">
+                    <h3>Photo <span>Gallery</span></h3>
+                </section>
+                <section class="box">
+                    <section class="dream">
+                        <img src="./Images/sin11.jpg" alt="sinharaja1">
+                        <img src="./Images/sin222.jpg" alt="sinharaja2">
+                        <img src="./Images/sin3.jpg" alt="sinharaja3">
+                    </section>
+                </section>
+            </section>
+            <section class="container5">
+                <section class="column5">
+                    <section class="heading5">
+                        <h1 x-text="h1Integrity" id="intergrityH1"></h1>
+                    </section>
+
+                    <p x-text="descriptionIntegrity" id="intergrityP"></p>
+                    <a href="https://whc.unesco.org/en/list/405/" class="read-more">Main source</a>
+
+                </section>
+
+                <section class="column5">
+
+                    <section class="vedio1">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/trEn59jExK8?si=jE_q4HX3yqvwE-_Z"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+
+
+                    </section>
+                </section>
+            </section>
+
+        </section>
+
+        <!-- About Minneriya -->
+        <section class="sinharaja" id="min">
+            <section class="heading5">
+                <h1 x-text="h1Minneriya" id="minneriyaH1"></h1>
+
+            </section>
+            <section class="container5">
+                <section class="column5">
+                    <section class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89397.35731199378!2d80.78554633798838!3d8.015188278140133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afb6009a20be05d%3A0xa4d046f2f06b05f5!2sMinneriya%20National%20Park!5e0!3m2!1sen!2slk!4v1703522286035!5m2!1sen!2slk"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+                </section>
+
+                <section class="column5">
+                    <section class="heading5">
+                        <h1 x-text="h1MinneriyaLocation" id="mineriyalocationH1"></h1>
+                    </section>
+                    <p x-text="descriptionMinneriyaLocation" id="mineriyaLocationP"></p>
+
+                    <a href="https://minneriyasafari.com/about/" class="read-more">Main source</a>
+
+                </section>
+            </section>
+
+
+            <section class="container-galary">
+                <section class="heading-g">
+                    <h3>Photo <span>Gallery</span></h3>
+                </section>
+                <section class="box">
+                    <section class="dream">
+                        <img src="./Images/gal2.jpg" alt="galoya1">
+                        <img src="./Images/gal3.jpeg" alt="mineriya">
+                        <img src="./Images/gal4.jpg" alt="minneriya">
+
+                    </section>
+                </section>
+            </section>
+            <section class="container5">
+                <section class="column5">
+                    <section class="heading5">
+                        <h1 x-text="h1WonderMinneriya" id="wonderMinneriyaH1">
+                        </h1>
+                    </section>
+
+                    <p x-text="descriptionWonderMinneriya" id="wonderMinneriyaP"></p>
+                    <a href="https://minneriyasafari.com/about/" class="read-more">Main source</a>
+
+
+                </section>
+
+                <section class="column5">
+
+                    <section class="vedio1">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/zg3a86G2JD8?si=d5Q3yDtt12aozVbT"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+
+
+                    </section>
+                </section>
+            </section>
+
+        </section>
+
+        <!-- Pop up dialog -->
+
+        <div class="form-container">
+            <dialog id="login-dialog" style="max-height: 400px; overflow-y: auto;">
+                <h2>WildLife-Haven.LK</h2>
+                <p>you can edit the page content<br>********************************************</p>
+                <button type="button" class="close" id="btnClose"><i class="ri-close-fill"></i></button>
+                <h1 id="dialogTitle" contenteditable="true"></h1>
+                <h2 id="dialogTitle2" contenteditable="true"></h2>
+                <p id="dialogDescription" contenteditable="true"></p>
+                <h1 id="dialogTitle3" contenteditable="true"></h1>
+                <p id="dialogDescription2" contenteditable="true"></p>
+                <h1 id="dialogTitle4" contenteditable="true"></h1>
+                <h1 id="dialogTitle5" contenteditable="true"></h1>
+                <p id="dialogDescription3" contenteditable="true"></p>
+                <h1 id="dialogTitle6" contenteditable="true"></h1>
+                <p id="dialogDescription4" contenteditable="true"></p>
+                <h1 id="dialogTitle7" contenteditable="true"></h1>
+                <h1 id="dialogTitle8" contenteditable="true"></h1>
+                <p id="dialogDescription5" contenteditable="true"></p>
+                <h1 id="dialogTitle9" contenteditable="true"></h1>
+                <p id="dialogDescription6" contenteditable="true"></p>
+                <h1 id="dialogTitle10" contenteditable="true"></h1>
+
+                <textarea id="editedAnimaltable" class="tabletitle" ></textarea>
+                <textarea id="editedFactTable" class="tabletitle" ></textarea>
+                <textarea id="elephantTitleEdited" class="tabledata" ></textarea>
+                <textarea id="elephantDescriptionEdited" class="tabledata"></textarea>
+
+                <textarea id="parrotEdit" class="tabletitle" ></textarea>
+                <textarea id="parakeetDescriptionEdit" class="tabletitle" ></textarea>
+                <textarea id="magpie1Edit" class="tabledata" ></textarea>
+                <textarea id="magpieDescriptionEdit" class="tabledata"></textarea>
+
+                <button type="button" id="btn">Submit</button>
+            </dialog>
+        </div>
+        <!-- End of pop up dialog -->
+
+
+        <!-- about table -->
+        <section id="table-part" class="table-container">
+            <h1 class="heading1" x-text="tableHeading" id="tableH1"></h1>
+            <div id="editableContent">
+                <table class="table" id="editTable">
+                    <thead>
+                        <tr>
+                            <th x-text="animalTH" id="animaltable"></th>
+                            <th x-text="factTH" id="factTable"></th>
+                            <th x-text="imgTH" id="imgTable"></th>
+                            <th x-text="exploreTH" id="exploreTable"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td data-label="Animal" x-text="elephant" id="elephantTitle"></td>
+                        <td data-label="Interesting Fact" x-text="elephantDescription" id="elephantDescription"></td>
+                        <td data-label="Image"><img src="./Images/elephant 2.jpg" alt="srilankan elephant"></td>
+                        <td data-label="Explore"><a href="https://www.worldwildlife.org/species/sri-lankan-elephant"
+                                class="btn">Explore</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Animal" x-text="parakeet" id="parrot">Layard's parakeet</td>
+                            <td data-label="Interesting Fact" x-text="parakeetDescription" id="parrotDescription"></td>
+                            <td data-label="Image"><img src="./Images/parrot 2.jpeg" alt="srilankan elephant"></td>
+                            <td data-label="Explore"><a
+                                    href="https://www.inaturalist.org/taxa/367554-Psittacula-calthrapae"
+                                    class="btn">Explore</a></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Animal" x-text="magpie" id="magpie1"></td>
+                            <td data-label="Interesting Fact" x-text="magpieDescription" id="magDescrption"></td>
+                            <td data-label="Image"><img src="./Images/blue 2.jpeg" alt="srilankan elephant"></td>
+                            <td data-label="Explore"><a href="https://ebird.org/species/ceymag1" class="btn">Explore</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" x-text="footer"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+        </section>jk
+
+        <!-- js section end  -->
+    </section>
+
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h1>"Wildlife-Haven.lk"</h1>
+                <p>
+                    Sri Lanka is a wildlife enthusiast's paradise and has plenty to offer visitors interested in animal
+                    and birdlife. This tropical island harbours an incredible selection of flora and fauna and is home
+                    to some of the finest national parks of the subcontinent. Home to a variety of species including the
+                    elusive leopard, regal elephant, blue whale, and a whole host of exotic birds, below is a list of
+                    the best places to see sectionerse and exciting wildlife on a tailor-made holiday to Sri Lanka.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4>Links :</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About WildLife-Haven</a></li>
+                    <li><a href="#">Locaton</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__col1">
+                <h4>Stay Updated with Our Newsletter!</h4>
+                <form onsubmit="storeNewsLetter(); return false;">
+                    <i class="ri-mail-line"></i>
+                    <input type="email" id="emailInput" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="ri-arrow-right-line"></i></button>
+                </form>
+
+                <div class="social-icons">
+                    <h4>Follow Us</h4>
+                    <i class="ri-facebook-circle-line"></i>
+                    <i class="ri-messenger-line"></i>
+                    <i class="ri-whatsapp-line"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-youtube-line"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            Copyright © WildLife-Haven.lk. All rights reserved.
+        </div>
+        <!-- <sources> -->
+        <!-- https://www.pexels.com/search/forest/ -->
+        <!-- https://en.wikipedia.org/wiki/Wildlife_of_Sri_Lanka -->
+        <!-- https://www.experiencetravelgroup.com/blog/best-wildlife-experiences-in-sri-lanka/ -->
+        <!-- https://www.google.com/maps/d/embed?mid=1owKlahZr4VNg3hrSmF7Q4Z6Ng6M&hl=en_US&ehbc=2E312F -->
+        <!-- https://www.youtube.com/embed/hTddDiwX9u4?si=oIziinIhZhLW7ZsR -->
+        <!-- https://www.pettitts.co.uk/blog/sri-lanka-wildlife -->
+        <!-- https://whc.unesco.org/en/list/405/ -->
+        <!-- https://minneriyasafari.com/about/ -->
+        <!-- https://www.worldwildlife.org/species/sri-lankan-elephant -->
+        <!-- https://www.inaturalist.org/taxa/367554-Psittacula-calthrapae -->
+        <!-- https://ebird.org/species/ceymag1 -->
+
+    </footer>
+    <script>
+        // Check if the value is set in localStorage
+        const changeStyle = localStorage.getItem('changeStyle');
+
+        if (changeStyle === 'true') {
+            // Change the style of the element
+            document.getElementById('editButton').style.display = 'block';
+
+            // Clear the value from localStorage so it doesn't trigger again
+            localStorage.removeItem('changeStyle');
+        }
+    </script>
+    <script src="./introduction.js"></script>
+
+</body>
+
+</html>

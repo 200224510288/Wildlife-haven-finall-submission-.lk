@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #082e3e;
+  --secondary-color: #e9c675;
+  --text-light: #cbd5e1;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Playfair Display", serif;
+}
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+ html,
+  body {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(./Images/nature-3194001_1280\ \(1\).jpg);
+    object-fit: cover;
+    background-size: cover;
+  }
+
+  /* footer part  */
+
+  .footer {
+    margin-top: 70vh;
+     background-image: url(./Images/avenue-815297_1920.jpg);
+    background-image: linear-gradient(to bottom,
+        rgba(255, 255, 255, 0),
+        var(--primary-color) 4rem);
+    
+  }
+  /* main container */
+  .footer__container {
+    display: grid;
+    gap: 4rem 2rem;
+   
+  } 
+  /* for the first section */
+  .footer__col:first-child {
+    max-width: 800px;
+  }
+  .footer__col p {
+    color: var(--text-light);
+    margin-left: 5%;
+  }
+  .footer__col h1 {
+    color: var(--text-light);
+    font-size: 50px;
+    margin-left: 15%;
+  }
+  
+  .footer__col h4 {
+    margin-bottom: 1rem;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--text-light);
+  }
+  .footer__col1{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.776);
+    border-radius: 20px;
+
+  }
+  .footer__col1 h4 {
+
+    margin: 1rem;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--text-light);
+  }
+
+  .footer__links {
+    list-style: none;
+    display: grid;
+    gap: 1rem;    
+    margin-left: 30px;
+
+  }
+  
+  .footer__links a {
+    color: var(--text-light);
+  }
+  
+  .footer__links a:hover {
+    color: var(--secondary-color);
+  }
+  
+  .footerBottom {
+    border-top: 1px solid white;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
+
+  }
+  /* adding a form for the newsletter */
+  form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+  }
+  form i{
+    font-size: 30px;
+    margin-right: 5%;
+  }
+ .ri-mail-line{
+  font-size: 40px;
+ }
+
+ /* for the placeholder */
+ form input{
+    width: 100%;
+    font-size: 25px;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+
+ }
+ form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+ }
+ form button i{
+    font-size: 30px;
+    margin-right: 10px;
+    color: var(--white);
+ }
+ .social-icons{
+    margin: 1rem;
+
+ }
+ .social-icons i{
+   font-size: 40px;
+   margin-right: 10px;
+   color: var(--white);
+   transition: 0.5s;
+   cursor: pointer;
+ 
+ }
+
+ .social-icons i:hover{
+   color: red;
+   font-size: 50px;
+   text-decoration: underline;
+
+}
+
+@media (min-width: 768px)  {
+  
+    .footer__container {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+    
+  }
+
+
+
+

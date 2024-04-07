@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Srilankan leopard</title>
+    <link rel="stylesheet" href="./css/leopard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <main>
+        <header>
+
+            <input type="checkbox" id="bars">
+            <nav class="nav-bar" id="navbar">
+                <div class="content">
+                    <div class="site-logo">
+                        <a href="#" class="logo-link">Wildlife-Haven.LK</a>
+                    </div>
+
+                    <ul class="navigation">
+                        <li class="link"><a href="./index.html">home</a></li>
+
+                        <li class="link"><a href="./2 Introduction_page.html">Introduction</a></li>
+
+
+                        <li class="link"><a href="#next">National Parks<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-nav">
+                                <li class="link"><a href="./6 Yala National Park.html ">Yala Park</a></li>
+                                <li class="link"><a href="./7 Wilpattu National Park.html ">Wilpattu Park</a></li>
+                            </ul>
+                        </li>
+                        <li class="link"><a href="">Animals In Srilanka<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-nav">
+                                <li class="link"><a href="./Srilankan leopard.html ">Leopard</a></li>
+                                <li class="link"><a href="./5 Animals in Sri Lanka.html">Endemic-Animals</a></li>
+                            </ul>
+                        </li>
+                        <li class="link"><a href="./3 Department of Wildlife Conservation.html">Conservation</a></li>
+
+
+                        <li class="link"><a href="./newlogin2.html">Login</a></li>
+
+
+                    </ul>
+
+                    <label for='bars' class="icon-bars"><i class="ri-menu-line"></i></label>
+                </div>
+            </nav>
+            </section>
+
+        </header>
+
+
+        <section class="container"></section>
+        <section class="row">
+            <section class="col">
+                <h1>Srilankan Leopard.</h1>
+                <p>The Sri Lankan leopard (Panthera pardus kotiya) is a leopard subspecies native to Sri Lanka. It was
+                    first described in 1956 by Sri Lankan zoologist Paules Edward Pieris Deraniyagala.[2]
+
+                    Since 2020, the Sri Lankan leopard has been listed as Vulnerable on the IUCN Red List, as the
+                    population is estimated at less than 800 mature insectioniduals, and is probably declining</p>
+                <button type="button" onclick="window.location.href='https://en.wikipedia.org/wiki/Sri_Lankan_leopard'"
+                    class="read-more">Main source</button>
+
+            </section>
+            <section class="col7">
+                <section class="card card1">
+                    <a href="#about">
+                        <h5>About Sri_Lankan leopard</h5>
+                    </a>
+
+                </section>
+                <section class="card card2">
+                    <a href="#Destination">
+                        <h5>Destinations.</h5>
+                    </a>
+                </section>
+
+            </section>
+
+        </section>
+    </main>
+    <!-- content part -->
+
+    <section x-data="leopardData">
+
+        <section class="leopard" id="about">
+            <!-- pop up dilog button -->
+
+            <button onclick="showLoginDialog()" style="display: none;" id="editButton">Edit-Content</button>
+
+            <section class="heading1">
+
+                <h1 x-text="h1Leopard" id="leopardH1">
+                </h1>
+
+            </section>
+            <section class="container4">
+                <section class="row4">
+                    <section class="col1">
+                        <section class="text-box">
+                            <h2 x-text="h2Leopard" id="leopardH2"></h2>
+                            <p x-text="descriptionLeopard" id="leopardP"></p>
+                            <button type="button"
+                                onclick="window.location.href='https://www.dilmahconservation.org/about-animals/mammals--f9925cffabdd604dfab150bbcb49f2a8/srilankanleopard--d8dbbf72a303e551afe0fd6c44d31a6f.html'"
+                                class="read-more">Main source</button>
+
+                        </section>
+                    </section>
+                    <section class="col2">
+                        <section class="vedio1">
+
+                            <p><iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/DFbaHtpLntk?si=TiqeAN4DTthWK87j"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe></p>
+
+                        </section>
+
+                    </section>
+                </section>
+            </section>
+
+
+            <section class="leopard" id="sinha">
+            </section>
+            <section class="container4">
+                <section class="row4">
+                    <section class="col1">
+                        <section class="text-box">
+                            <h2 x-text="h2habitats" id="habittatH2"></h2>
+                            <p x-text="descriptionhabitats" id="habitatDescription"></p>
+                            <a href="https://leopardtrails.com/sri-lankan-leopard/#:~:text=The%20best%20known%20locations%2C%20to,where%20conservation%20is%20most%20predominant."
+                                class="read-more">Main source</a>
+                        </section>
+                    </section>
+                    <section class="col2">
+                        <section class="text-box">
+                            <h2 x-text="h2Diet" id="dietH2"></h2>
+                            <p x-text="decriptionDiet" id="descriptionP"></p>
+                            <h2 x-text="h2Behavior" id="behaviorH2"></h2>
+                            <p x-text="descriptionBehavior" id="behaviordescription"></p>
+
+                            <a href="https://www.jungledragon.com/specie/1088/sri_lankan_leopard.html"
+                                class="read-more">Main source</a>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="container-galary">
+                <section class="heading-g">
+                    <h3>Leopard <span>Gallery</span></h3>
+                </section>
+                <section class="box">
+                    <section class="dream">
+                        <img src="Images/cart 1.leo.jpg">
+                        <img src="Images/gal7.jpg">
+                        <img src="Images/ani3.jpg">
+                    </section>
+                </section>
+            </section>
+            <!-- locations part -->
+
+
+            <section class="locations" id="Destination">
+                <section class="container1">
+                    <section class="column">
+                        <section class="heading">
+
+                            <h1 x-text="h2Distribution" id="distributionH2"></h1>
+                            <p x-text="descriptionDistribution" id="distribtiondescrip"></p>
+                            <a href="https://www.leopardsafari.com/leopards-in-sri-lanka.html" class="read-more">Main
+                                source</a>
+
+                        </section>
+                        <section class="map">
+                            <iframe
+                                src="https://www.google.com/maps/d/embed?mid=1DtD1rzc1hccRbUiM8XSs6OSxO_QyaKam&ehbc=2E312F"
+                                width="640" height="480"></iframe>
+                        </section>
+                        <section class="slider1">
+
+
+                        </section>
+                    </section>
+                    <section class="column">
+                        <h2 x-text="h2Yala" id="yalaTitle"></h2>
+                        <p x-text="descriptionYala" id="YalaDescription"></p>
+                        <a href="https://www.wildlifetourssrilanka.com/wildlife/wildlife-in-sri-lanka/%E2%80%9Cleopards-in-yala-national-park%E2%80%9D.html"
+                            class="read-more">Main source</a>
+                        <h2 x-text="h2Wilpattu" id="wilpattuTitle"></h2>
+                        <p x-text="descriptionWilpattu" id="wilpattuDescription"></p>
+                        <a href="https://travellersisle.com/where-to-see-leopards-in-sri-lanka/" class="read-more">Main
+                            source</a>
+                        <h2 x-text="h2HortonPlains" id="hortainH2"></h2>
+                        <p x-text="descriptionHortonPlains" id="hortainDescription"></p>
+                        <a href="https://medium.com/@Shanuka.Kadupitiyage/seeking-the-leopards-of-horton-plains-98cfb5f1d9e0"
+                            class="read-more">Main source</a>
+
+                    </section>
+
+                </section>
+            </section>
+            <section class="threat" id="sinha">
+                <section class="heading3">
+                    <h1 x-text="h2Threats" id="threatH2"></h1>
+                </section>
+                <section class="container5">
+                    <section class="row5">
+                        <section class="col3">
+                            <section class="text-box1">
+                                <h2 x-text="h2HabitatLoss" id="habitatLossH2"></h2>
+                                <p x-text="descriptionHabitatLoss" id="habitantlossDescription"></p>
+                                <a href="https://www.slycantrust.org/post/beleaguered-biosectionersity-protecting-sri-lankas-unique-wildlife#:~:text=More%20than%20any%20environmental%20factor,%2C%20industry%2C%20and%20unsustainable%20tourism."
+                                    class="read-more">Main source</a>
+                                <h2 x-text="h2PreventingActs" id="preventingLossH2"></h2>
+                                <p x-text="descriptionPreventingActs" id="preventingLossP"></p>
+                                <a href="https://efl.lk/biosectionersity-law-overview-sri-lanka/" class="read-more">Main
+                                    source</a>
+
+                            </section>
+                        </section>
+                        <section class="col4">
+                            <section class="images">
+
+                                <img src="./Images/thret2.jpg">
+
+                                <img src="./Images/treat4.jpg">
+
+                            </section>
+
+                        </section>
+                    </section>
+
+                </section>
+                <section class="hunting" id="sinha">
+                    <section class="container6">
+                        <section class="row6">
+                            <section class="col5">
+                                <section class="text-box2">
+                                    <h2 x-text="h2Hunting" id="huntingH2"></h2>
+                                    <p x-text="descriptionHunting" id="huntingDescription"></p>
+                                    <a href="https://ypte.org.uk/factsheets/trade-and-endangered-species/case-history-leopard"
+                                        class="read-more">Main source</a>
+                                    <h2 x-text="h2Preventing" id="preventingHuntH2"></h2>
+                                    <p x-text="descriptionPreventing" id="preventingHuntP"></p>
+                                    <a href="https://efl.lk/biosectionersity-law-overview-sri-lanka/"
+                                        class="read-more">Main source</a>
+
+                                </section>
+                            </section>
+                            <section class="col6">
+                                <section class="images">
+                                    <img src="./Images/hunt1.jpg">
+                                    <img src="./Images/hunt2.jpg">
+
+                                </section>
+                            </section>
+                        </section>
+
+                    </section>
+
+
+                    <section class="introduction1" id="specis">
+                        <section class="container3">
+                            <section class="column4">
+                                <section class="image">
+                                    <img src="./Images/lepo.jpg">
+                                </section>
+                            </section>
+
+                            <section class="column5">
+                                <section class="heading4">
+                                    <h1 x-text="h2Leopocon" id="loeopardH2"></h1>
+                                </section>
+
+                                <p x-text="descriptionLeopocon" id="leopordDescription"></p>
+                                <br>
+                                <p x-text="description2Leopocon" id="leopordDescription2"></p>
+                                <a href="https://www.leopocon.org/" class="read-more">Main source</a>
+                            </section>
+                        </section>
+                    </section>
+                    <!-- end of content  -->
+                </section>
+
+
+
+
+                <footer class="footer">
+                    <div class="section__container footer__container">
+                        <div class="footer__col">
+                            <h1>"Wildlife-Haven.lk"</h1>
+                            <p>
+                                Sri Lanka is a wildlife enthusiast's paradise and has plenty to offer visitors
+                                interested in animal and birdlife. This tropical island harbours an incredible selection
+                                of flora and fauna and is home to some of the finest national parks of the subcontinent.
+                                Home to a variety of species including the elusive leopard, regal elephant, blue whale,
+                                and a whole host of exotic birds, below is a list of the best places to see sectionerse
+                                and exciting wildlife on a tailor-made holiday to Sri Lanka.
+                            </p>
+                        </div>
+                        <div class="footer__col">
+                            <h4>Links :</h4>
+                            <ul class="footer__links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About WildLife-Haven</a></li>
+                                <li><a href="#">Locaton</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__col1">
+                            <h4>Stay Updated with Our Newsletter!</h4>
+                            <form onsubmit="storeNewsLetter(); return false;">
+                                <i class="ri-mail-line"></i>
+                                <input type="email" id="emailInput" placeholder="Enter your email id" required>
+                                <button type="submit"><i class="ri-arrow-right-line"></i></button>
+                            </form>
+                            <div class="social-icons">
+                                <h4>Follow Us</h4>
+                                <i class="ri-facebook-circle-line"></i>
+                                <i class="ri-messenger-line"></i>
+                                <i class="ri-whatsapp-line"></i>
+                                <i class="ri-instagram-line"></i>
+                                <i class="ri-youtube-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footerBottom">
+                        Copyright © WildLife-Haven.lk. All rights reserved.
+                    </div>
+                    <!-- https://www.pexels.com/search/forest/ -->
+                    <!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css -->
+                    <!-- https://en.wikipedia.org/wiki/Sri_Lankan_leopard -->
+                    <!-- https://www.dilmahconservation.org/about-animals/mammals--f9925cffabdd604dfab150bbcb49f2a8/srilankanleopard--d8dbbf72a303e551afe0fd6c44d31a6f.html -->
+                    <!-- https://leopardtrails.com/sri-lankan-leopard/#:~:text=The%20best%20known%20locations%2C%20to,where%20conservation%20is%20most%20predominant. -->
+                    <!-- https://www.google.com/maps/d/embed?mid=1DtD1rzc1hccRbUiM8XSs6OSxO_QyaKam&ehbc=2E312F -->
+                    <!-- https://www.wildlifetourssrilanka.com/wildlife/wildlife-in-sri-lanka/%E2%80%9Cleopards-in-yala-national-park%E2%80%9D.html -->
+                    <!-- https://travellersisle.com/where-to-see-leopards-in-sri-lanka/ -->
+                    <!-- https://medium.com/@Shanuka.Kadupitiyage/seeking-the-leopards-of-horton-plains-98cfb5f1d9e0 -->
+                    <!-- https://www.slycantrust.org/post/beleaguered-biosectionersity-protecting-sri-lankas-unique-wildlife#:~:text=More%20than%20any%20environmental%20factor,%2C%20industry%2C%20and%20unsustainable%20tourism. -->
+                    <!-- https://efl.lk/biosectionersity-law-overview-sri-lanka/ -->
+                    <!-- https://ypte.org.uk/factsheets/trade-and-endangered-species/case-history-leopard -->
+                    <!-- https://www.leopocon.org/ -->
+
+                </footer>
+                <!-- Pop up dialog -->
+                
+                <div class="form-container">
+                    <dialog id="login-dialog" style="max-height: 400px; overflow-y: auto;">
+                        <h2>WildLife-Haven.LK</h2>
+                        <p>you can edit the page content<br>********************************************</p>
+                        <button type="button" class="close" id="btnClose"><i class="ri-close-fill"></i></button>
+                
+                        <h1 id="dialogTitle" contenteditable="true"></h1>
+                        <h2 id="dialogTitle2" contenteditable="true"></h2>
+                        <p id="dialogDescription" contenteditable="true"></p>
+                        <h2 id="dialogTitle3" contenteditable="true"></h2>
+                        <p id="dialogDescription2" contenteditable="true"></p>
+                        <h2 id="dialogTitle4" contenteditable="true"></h2>
+                        <p id="dialogDescription3" contenteditable="true"></p>
+                        <h2 id="dialogTitle5" contenteditable="true"></h2>
+                        <p id="dialogDescription4" contenteditable="true"></p>
+                        <h2 id="dialogTitle6" contenteditable="true"></h2>
+                        <p id="dialogDescription5" contenteditable="true"></p>
+                        <h2 id="dialogTitle7" contenteditable="true"></h2>
+                        <p id="dialogDescription6" contenteditable="true"></p>
+                        <h2 id="dialogTitle8" contenteditable="true"></h2>
+                        <p id="dialogDescription7" contenteditable="true"></p>
+                        <h2 id="dialogTitle9" contenteditable="true"></h2>
+                        <p id="dialogDescription8" contenteditable="true"></p>
+                
+                        <h2 id="dialogTitle10" contenteditable="true"></h2>
+                
+                        <h2 id="dialogTitle11" contenteditable="true"></h2>
+                        <p id="dialogDescription9" contenteditable="true"></p>
+                
+                        <h2 id="dialogTitle12" contenteditable="true"></h2>
+                        <p id="dialogDescription10" contenteditable="true"></p>
+                
+                        <h2 id="dialogTitle13" contenteditable="true"></h2>
+                        <p id="dialogDescription11" contenteditable="true"></p>
+                        <!-- start -->
+                        <h2 id="dialogTitle14" contenteditable="true"></h2>
+                        <p id="dialogDescription12" contenteditable="true"></p>
+                
+                        <h2 id="dialogTitle15" contenteditable="true"></h2>
+                        <p id="dialogDescription13" contenteditable="true"></p>
+                        <p id="dialogDescription14" contenteditable="true"></p>
+
+<button type="button" id="btn">Submit</button>
+</dialog>
+</div>
+<!-- End of pop up dialog -->
+
+<script src="./leopard.js"></script>
+<script>
+    // Check if the value is set in localStorage
+    const changeStyle = localStorage.getItem('changeStyle');
+
+    if (changeStyle === 'true') {
+        // Change the style of the element
+        document.getElementById('editButton').style.display = 'block';
+
+        // Clear the value from localStorage so it doesn't trigger again
+        localStorage.removeItem('changeStyle');
+    }
+</script>
+</body>
+
+</html>

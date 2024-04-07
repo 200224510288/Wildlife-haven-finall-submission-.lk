@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #082e3e;
+  --secondary-color: #e9c675;
+  --text-light: #cbd5e1;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Playfair Display", serif;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-image: url(./Images/avenue-815297_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+}
+.container{
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px 0;
+    border-radius: 20px;
+    background-color: #082e3e;
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.776);
+    opacity: 0.9;
+
+}
+span{
+    color: var(--white);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+header{
+    color: var(--white);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.input{
+    margin: 20px;
+    font-size: 20px;
+   height: 45px; 
+   width: 87%;
+   border: none;
+   outline: none;
+   border-radius: 30px;
+   color: var(--primary-color);
+   padding: 0 0 0 42px;
+   background: var(--text-light);
+}
+i{
+    position: relative;
+    top: -51px;
+    left: 28px;
+    color: black;
+}
+::-webkit-input-placeholder{
+    color: black;
+}
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    height: 45px;
+    outline: none;
+    width: 50%;
+    margin-left: 20%;
+    background: var(--text-light);
+    cursor: pointer;
+    transition: .3s;
+}
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.776);
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size:15px;
+    color: var(--text-light);
+    margin-top: 10px;
+}
+.left{
+    display: flex;
+    margin: 20px;
+
+}
+.right{
+    margin-right: 10%;
+    margin-bottom: -10%;
+}
+label a{
+    color: white;
+    text-decoration: none;
+}

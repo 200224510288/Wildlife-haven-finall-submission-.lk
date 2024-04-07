@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>login page</title>
+    <link rel="stylesheet" href="./newlogin2.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+    <header>
+
+        <input type="checkbox" id="bars">
+<nav class="nav-bar" id="navbar">
+    <div class="content">
+        <div class="site-logo">
+            <a href="#" class="logo-link">Wildlife-Haven.LK</a>
+        </div>
+
+        <ul class="navigation">
+            <li class="link"><a href="./index.html">home</a></li>
+
+            <li class="link"><a href="./2 Introduction_page.html">Introduction</a></li>
+
+
+            <li class="link"><a href="#next">National Parks<i class="fas fa-caret-down"></i></a>
+                <ul class="sub-nav">
+                    <li class="link"><a href="./6 Yala National Park.html ">Yala Park</a></li>
+                    <li class="link"><a href="./7 Wilpattu National Park.html ">Wilpattu Park</a></li>
+                </ul>
+            </li>
+            <li class="link"><a href="">Animals In Srilanka<i class="fas fa-caret-down"></i></a>
+                <ul class="sub-nav">
+                    <li class="link"><a href="./Srilankan leopard.html ">Leopard</a></li>
+                    <li class="link"><a href="./5 Animals in Sri Lanka.html">Endemic-Animals</a></li>
+                </ul>
+            </li>
+            <li class="link"><a href="./3 Department of Wildlife Conservation.html">Conservation</a></li>
+
+            
+            <li class="link"><a href="newlogin2.html">Login</a></li>
+
+
+        </ul>
+
+        <label for='bars' class="icon-bars"><i class="ri-menu-line"></i></label>
+    </div>
+</nav>
+        </section>
+
+    </header>
+
+    <section class="row">
+        <section class="col">
+            <h1>Welcome!</h1>
+            <p>
+                "Welcome to our login portal, your gateway to an immersive journey through the wonders of Sri Lankan wildlife...</p>
+        </section>
+
+        <section class="col1">
+           <!-- login page  -->
+ <div class="wrapper">
+   
+    <div class="form_box login">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <i class="ri-mail-line"></i>
+                </span>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+    
+            <div class="input-box">
+                <span class="icon">
+                    <i class="ri-lock-2-line"></i>
+                </span>
+                <input type="password" class="form-control" id="password" name="password" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox">Remember me
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="button" onclick="loginUser()" class="btn btn-primary" id="login_btn">Login</button>
+
+
+            <div class="login-register">
+                <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+ <!-- registeration section  -->
+ <div class="form_box register">
+    <h2>Registeration</h2>
+    <form action="#">
+
+        <div class="input-box">
+            <span class="icon">
+                <i class="ri-user-fill"></i> </span>
+                <!-- get the user input for name  -->
+            <input type="text" class="form-control" id="regName" name="name"  required>
+            <label for="name">Username</label>
+        </div>
+        <div class="input-box">
+            <span class="icon">
+                <i class="ri-mail-line"></i>
+            </span>
+             <!-- get the user input for email  -->
+
+            <input type="email" class="form-control" id="regEmail" name="email"  required>
+            <label for="email">Email</label>
+          
+        </div>
+        <div class="input-box">
+            <span class="icon">
+                <i class="ri-lock-2-line"></i>
+            </span>
+            <!-- get the user input for password  -->
+
+            <input type="password" class="form-control" id="regPassword" name="password"  required>
+            <label for="password">Password</label>  
+        </div>   
+        <div class="remember-forgot">
+            <label><input type="checkbox" required>
+                I agree to the terms & conditions</label>
+            <!-- <a href="#">Forgot password?</a> -->
+        </div>
+        <button type="submit" onclick="registerUser()" class="btn btn-primary" id="save_btn">Register</button>
+        <!-- <button type="submit" class="btn">Register</button> -->
+        <div class="login-register">
+            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+        </div>
+    </form>
+
+</div>
+
+<script src="newloging.js"></script>
+
+</body>
+</html>
